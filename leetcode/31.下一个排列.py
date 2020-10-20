@@ -32,5 +32,18 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        n = len(nums)
+        i,j,k = n-2,n-1,n-1   
+        
+        while i >= 0 and nums[i] >= nums[j]:
+            i -= 1 
+            j -= 1 
+            
+        if i >= 0:
+            while nums[i] >= nums[k]:
+                k -= 1 
+            nums[i],nums[k] = nums[i],nums[k]
+        
+        for i in range(j)
 # @lc code=end
 

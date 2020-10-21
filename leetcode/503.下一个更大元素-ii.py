@@ -33,18 +33,44 @@
 # @lc code=start
 class Solution:
     def nextGreaterElements(self, nums: List[int]) -> List[int]:
-        n = len(nums)
-        res = [None]*(n)
+        
+        res = [-1] * len(nums)
         stack = []
-        for i in range(n-1,-1,-1):
-            while stack and stack[-1] <= nums[i]:
+        for i in range(len(nums)-1,-1,-1):
+            while stack and nums[i%len(nums)] >= nums[stack[-1]]:
                 stack.pop()
+                
+            if stack:
+                res[i%(len(nums))] = nums[stack[-1]]
             
-            res[i] = -1 if not stack else stack[-1]
-            
-            stack.append(i)
-        return res 
+            stack.append(i%(len(nums)))
+      
+        return res   
+    
                 
 
 # @lc code=end
 
+# class Solution:
+#     def nextGreaterElements(self, nums: List[int]) -> List[int]:
+        
+#         res = [-1] * len(nums)
+#         stack = []
+#         for i in range(len(nums)-1,-1,-1):
+#             while stack and nums[i] >= nums[stack[-1]]:
+#                 stack.pop()
+                
+#             if stack:
+#                 res[i] = nums[stack[-1]]
+            
+#             stack.append(i)
+            
+#         for i in range(len(nums)-1,-1,-1):
+#             while stack and nums[i] >= nums[stack[-1]]:
+#                 stack.pop()  
+#             if stack:
+#                 res[i] = nums[stack[-1]]
+                
+#             stack.append(i)
+#         return res   
+    

@@ -53,7 +53,7 @@
 #
 
 # @lc code=start
-"""
+
 # Definition for a Node.
 class Node:
     def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
@@ -61,33 +61,42 @@ class Node:
         self.left = left
         self.right = right
         self.next = next
-"""
+
 
 class Solution:
-    def connect(self, root: 'Node') -> 'Node': ## next指针
+    def connect(self, root: 'Node') -> 'Node': ## 链表操作，和迭代一样，只不过用链表
+        
         if not root:
             return root  
-        lm = root  
         
-        while lm.left:
+        cur = root  
+        
+        while cur: 
             
-            head = lm  
+            dummy = Node(0)
             
-            while head:
+            pre = dummy    
+            
+            while cur and cur.left:
                 
-                head.left.next = head.right
+                pre.next = cur.left 
                 
-                if head.next:
-                    
-                    head.right.next = head.next.left 
-                    
-                head = head.next  
-            
-            lm = lm.left 
+                pre = pre.next  
+                
+                pre.next = cur.right  
+                
+                pre = pre.next 
+                
+                cur = cur.next 
+                
+            cur = dummy.next 
+        
         return root 
-         
+            
+            
+            
+            
         
-       
         
 
             
@@ -140,3 +149,31 @@ class Solution:
     #                 queue.append(node.right)
                     
     #     return root     
+    
+    
+    
+    
+    # class Solution:
+    # def connect(self, root: 'Node') -> 'Node': ## next指针
+    #     if not root:
+    #         return root  
+    #     lm = root  
+        
+    #     while lm.left:
+            
+    #         head = lm  
+            
+    #         while head:
+                
+    #             head.left.next = head.right
+                
+    #             if head.next:
+                    
+    #                 head.right.next = head.next.left 
+                    
+    #             head = head.next  
+            
+    #         lm = lm.left 
+    #     return root 
+    
+    ##思路：逐层添加指针，同父节点的节点可以直接添加，不同父节点的多一步判断。第N行其实添加的是第n+1行的指针。第0行不用指针   

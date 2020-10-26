@@ -56,16 +56,16 @@ class Solution:
     def findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]: ## 官方题解 UID
         counter = collections.Counter()
         trees = collections.defaultdict()
-        trees.factory_dict
+        trees.default_factory = trees.__len__
         ans = []
         def traverse(root):
             if not root:
                 return "#"
-            subtree = "{},{},{}".format(root.val,traverse(root.left),traverse(root.right))
-            counter[subtree] += 1  
-            if counter[subtree] == 2:
+            uid = trees[root.val,traverse(root.left),traverse(root.right)]
+            counter[uid] += 1  
+            if counter[uid] == 2:
                 ans.append(root)
-            return subtree  
+            return uid  
         traverse(root)
         
         return ans 

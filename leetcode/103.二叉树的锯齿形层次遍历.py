@@ -45,33 +45,34 @@
 #         self.right = None
 
 class Solution:
-    def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]: ## 递归
+    def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]: ## 层次遍历 
         if not root:
             return []
-        
         ans = []
         cur = [root]
-        depth = 0
+        depth = 0 
         
-        while cur:   
-            temp = []
-            next_level = []
-            for node in cur:
-                temp.append(node.val)
-                if node.left:
-                    next_level.append(node.left)
-                if node.right:
-                    next_level.append(node.right)
+        while cur:  
             
-            depth += 1  
+            temp = []
+            next = []
+            for node in cur: 
+                temp.append(node.val) 
+                if node.left:
+                    next.append(node.left)
+                if node.right:
+                    next.append(node.right)
+            
+            depth += 1 
             if depth % 2 == 0:
                 ans.append(temp[::-1])
             else:
                 ans.append(temp)
                 
-            cur = next_level  
-        return ans  
+            cur = next  
             
+        return ans  
+  
 
                 
                 

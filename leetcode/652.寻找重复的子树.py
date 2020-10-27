@@ -65,7 +65,7 @@ class Solution:
             counter[uid] += 1  
             if counter[uid] == 2:
                 ans.append(root)
-            return uid  
+              
         traverse(root)
         
         return ans 

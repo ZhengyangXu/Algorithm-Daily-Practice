@@ -42,6 +42,50 @@
 #         self.right = None
 
 class Solution:
-    def hasPathSum(self, root: TreeNode, sum: int) -> bool:
+    def hasPathSum(self, root: TreeNode, sum: int) -> bool:## BFS
+        if not root:
+            return False
+        
+        curnode = [root]
+        total = [root.val]
+        
+        while curnode:
+            
+            node =  curnode.pop() 
+            cursum = total.pop() 
+            if not node.left and not node.right and sum-cursum == 0:
+                return True  
+            if node.left:
+                curnode.append(node.left)
+                total.append(cursum+node.left.val) 
+            if node.right:
+                curnode.append(node.right)
+                total.append(cursum+node.right.val)
+        return False     
+                
 # @lc code=end
+#    def hasPathSum(self, root: TreeNode, sum: int) -> bool:## 递归
+#         if not root:
+#             return False  
+#         if not root.left and not root.right:
+#             return sum == root.val
+        
+#         return self.hasPathSum(root.left,sum-root.val) or self.hasPathSum(root.right,sum-root.val)
 
+
+    # def hasPathSum(self, root: TreeNode, sum: int) -> bool:## BFS
+    #     if not root:
+    #         return False  
+        
+    #     cur = [(root,sum-root.val)]
+        
+    #     while cur:
+            
+    #         node,cursum = cur.pop()
+    #         if not node.left and not node.right and cursum == 0:
+    #             return True   
+    #         if node.left:
+    #             cur.append((node.left,cursum-node.left.val))
+    #         if node.right:
+    #             cur.append((node.right,cursum-node.right.val))
+    #     return False     

@@ -89,3 +89,9 @@ class Solution:
     #         if node.right:
     #             cur.append((node.right,cursum-node.right.val))
     #     return False     
+    
+    ## 思路：递归或者BFS。BFS可以用两个栈，一个记录当前节点，一个记录到当前节点的路径的和。如果到了
+    ##叶子结点有sum和原来的sum相等，则True，否则False.  
+    
+    ## 递归：判断root节点需要做的操作，然后递归。需要两个判断：是否有root，没有则false，有root的话
+    ## root是否是唯一节点，是的话则判断root.val和sum，否则递归。

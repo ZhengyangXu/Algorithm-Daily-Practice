@@ -52,20 +52,29 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    ans = float("-inf")
+    def __init__(self):
+        self.ans = float("-inf")
+
     def maxPathSum(self, root: TreeNode) -> int:
         
-
         def helper(root):
             if not root:
                 return 0  
-            left = max(0,self.maxPathSum(root.left))
-            right = max(0,self.maxPathSum(root.right))
-            ans = max(ans,root.val+left+right)
-            return max(left,right)+root.val
+            left = max(0,helper(root.left))
+            right = max(0,helper(root.right))
+            self.ans = max(self.ans,root.val+left+right)
+            return root.val + max(left,right)
         helper(root)
-        return ans
+        
+        return self.ans
+            
+            
         
         
 # @lc code=end
 
+## 思路：递归。一定要记住自己的递归函数是干嘛用的，不要跳到递归的内部实现中去。
+## 比如这道题，递归函数的作用是返回当前路径的最大值，那么站在root的角度来说，
+## 就是用root的值加上左子树的最大路径值，再加上右子树的最大路径值。这里返回的
+## 值要注意，如果子树同时存在左右两个节点，那么应该去两个节点中的max+当前节点的
+## 值作为返回值，因为路径不包含分支，比如例子中[-10,20,15,7],不存在这样的路径

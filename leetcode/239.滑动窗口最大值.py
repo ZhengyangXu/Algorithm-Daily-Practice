@@ -56,12 +56,14 @@
 # @lc code=start
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
-        window = []
+        
         res = []
+        window = []
+        
         for i in range(len(nums)):
+            
             if i >= k and i - k == window[0]:
                 window.pop(0)
-                
             
             
             while window and nums[window[-1]] <= nums[i]:
@@ -69,12 +71,12 @@ class Solution:
             window.append(i)
             
             
-            if i >= k-1:
+            
+            if i >= k - 1:
                 res.append(nums[window[0]])
                 
-        
-        return res          
-        
+        return res  
+
             
 
                 

@@ -56,34 +56,33 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def generateTrees(self, n: int) -> List[TreeNode]:## 带memo的递归
+    def generateTrees(self, n: int) -> List[TreeNode]:## DP
+
+        dp = [[None]*(n+1) for _ in range(n+1)]
         
-        def gt(s,e):
-            
-            if s > e:
-                return [None,]
-            memo = [[None]*(n+1) for _ in range(n+1)]
-            
-            if memo[s][e] != None:
-                return memo[s][e]
-            
-            ans = []
-            
-            for i in range(s,e+1):
-                left = gt(s,i-1)
-                right = gt(i+1,e)
+        for i in range(1,n+1):
+            dp[i][i] = TreeNode(i)
+        
+        for len in range(2,n+1):
+            for i in range(1,n-len+2):
+                j = i + len - 1 
+                for k in range(i,j+1):
+                    if i != k:
+                        left = dp[i][k-1]
+                    if k != j:
+                        right = dp[k+1][j]
+                        
+                    for l in left:
+                        for r in right:
+                            root = TreeNode(k)
+                            root.left = l 
+                            root.right = r   
+                            dp[i][j] = root 
+        return dp[1][n]
+                    
                 
-                for l in left:
-                    for r in right:
-                        root = TreeNode(i)
-                        root.left = l 
-                        root.right = r 
-                        ans.append(root)
             
-            memo[s][e] = ans 
-            return ans
-            
-        return gt(1,n) if n else []
+
              
                   
         

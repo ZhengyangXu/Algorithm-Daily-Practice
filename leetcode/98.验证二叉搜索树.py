@@ -57,14 +57,22 @@
 
 class Solution:
     def isValidBST(self, root: TreeNode) -> bool:
-        def helper(root,upper,lower):
+        
+        def helper(root,small,big):
+            
             if not root:
                 return True 
-            if root.val > lower and root.val < upper:
-                return helper(root.left,root.val,lower) and helper(root.right,upper,root.val)
+            
+            if root.val > small and root.val < big:
+                return helper(root.left,small,root.val) and helper(root.right,root.val,big)
             else:
                 return False 
-        return helper(root,float('inf'),float('-inf'))
+            
+            return True  
+        
+        return helper(root,float('-inf'),float('inf'))
+
+            
 
             
 # @lc code=end
@@ -85,3 +93,12 @@ class Solution:
     #             node = tmp.right
     #     return True 
     # 中序遍历
+    # def isValidBST(self, root: TreeNode) -> bool:
+    #     def helper(root,upper,lower):
+    #         if not root:
+    #             return True 
+    #         if root.val > lower and root.val < upper:
+    #             return helper(root.left,root.val,lower) and helper(root.right,upper,root.val)
+    #         else:
+    #             return False 
+    #     return helper(root,float('inf'),float('-inf'))

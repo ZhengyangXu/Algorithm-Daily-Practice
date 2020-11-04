@@ -48,3 +48,4 @@ class Solution:
                 
 # @lc code=end
 
+## 思路：双指针，相当于27题，当val = 0 时，最后nums[i:]赋0值即可

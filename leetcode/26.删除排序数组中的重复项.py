@@ -73,3 +73,7 @@ class Solution:
         return i+1
 # @lc code=end
 
+## 思路：双指针。i，j两个指针，j指针遍历整个数组，并将nums[i]与nums[j]比较，两者不相等时,
+## i+1.并将Num[j]的值赋给nums[i].网上看到一个优化的点，如果没有重复数字，那么会原地复制nums[j],
+## 可以判断j>i的情况下再进行复制操作。
+

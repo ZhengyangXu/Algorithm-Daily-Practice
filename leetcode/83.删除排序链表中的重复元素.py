@@ -51,7 +51,9 @@ class Solution:
         slow.next = None 
         return head  
                 
-
+## 思路：和数组一样的思路。判断快指针和慢指针或者指定的值的值，如果相等，则fast = fast.next,
+## 否则，slow.next指向fast，同时更新slow为slow.next.fast指针一直向前走，套路是慢指针不判断，
+## 跟随快指针的判断结果改变
             
 # @lc code=end
 
@@ -63,3 +65,4 @@ class Solution:
     #         else:
     #             current = current.next 
     #     return head 
+    

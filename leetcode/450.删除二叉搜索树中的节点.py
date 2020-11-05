@@ -1,9 +1,14 @@
+# @before-stub-for-debug-begin
+from python3problem450 import *
+from typing import *
+# @before-stub-for-debug-end
+
 #
 # @lc app=leetcode.cn id=450 lang=python3
 #
 # [450] 删除二叉搜索树中的节点
 #
-# https://leetcode-cn.com/problems/delete-node-in-a-bst/description/
+# https://leetcode-cn.com/problems/delete-n+ode-in-a-bst/description/
 #
 # algorithms
 # Medium (44.23%)
@@ -66,30 +71,31 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def deleteNode(self, root: TreeNode, key: int) -> TreeNode: ## 递归，用左子树最大值替换删除值
-        def getmax(node):
-            while node.right:
-                node = node.right  
-            return node   
-        
+    def deleteNode(self, root: TreeNode, key: int) -> TreeNode: ## 迭代
         if not root:
             return  
-        if root.val == key:
-            if not (root.left and root.right):
-                return root.left if root.left else root.right  
-            else:
-                maxnode = getmax(root.left)
-                root.val = maxnode.val  
-                
-                root.left = self.deleteNode(root.left,maxnode.val)
-                
-        elif root.val > key:
-            root.left = self.deleteNode(root.left,key)
-            
-        else:
-            root.right = self.deleteNode(root.right,key)
+        pre = TreeNode()
+        cur = root   
         
-        return root                  
+        while cur: 
+            pre = cur  
+            if cur.val == key:
+                if not cur.left and not cur.right:
+                    cur = None
+                if not cur.left or not cur.right:
+                    cur = cur.left if cur.left else cur.right 
+                else:
+                    while cur.left.left:
+                        cur = cur.left 
+                    pre.val = cur.left.val 
+                    cur.left = None   
+            elif cur.val < key:
+                cur = cur.right             
+            else:
+                cur = cur.left  
+        return root  
+        
+
         
 # @lc code=end
 
@@ -115,3 +121,29 @@ class Solution:
     #         root.right = self.deleteNode(root.right,key)
             
     #     return root   
+    
+    
+        # def deleteNode(self, root: TreeNode, key: int) -> TreeNode: ## 递归，用左子树最大值替换删除值
+        # def getmax(node):
+        #     while node.right:
+        #         node = node.right  
+        #     return node   
+        
+        # if not root:
+        #     return  
+        # if root.val == key:
+        #     if not (root.left and root.right):
+        #         return root.left if root.left else root.right  
+        #     else:
+        #         maxnode = getmax(root.left)
+        #         root.val = maxnode.val  
+                
+        #         root.left = self.deleteNode(root.left,maxnode.val)
+                
+        # elif root.val > key:
+        #     root.left = self.deleteNode(root.left,key)
+            
+        # else:
+        #     root.right = self.deleteNode(root.right,key)
+        
+        # return root                  

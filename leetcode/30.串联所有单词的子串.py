@@ -44,22 +44,42 @@
 class Solution:
     from collections import Counter
     def findSubstring(self, s: str, words: List[str]) -> List[int]:
-        numword = len(words)
-        lenword = len(words[0])
-        totallen = numword*lenword
-        slen = len(s)
-        i = 0 
+        word_len = len(words[0])
+        word_num = len(words)
+        str_len = len(s)
+        ws_len = word_len * word_num  
         res = []
-        while i <= slen - totallen:
+        
+        for i in range(0,str_len-ws_len+1,word_len):
             counter = Counter(words)
-            for j in range(i,i+totallen,lenword):
-                if s[j:j+lenword] in counter:
-                    counter[s[j:j+lenword]] -= 1  
-            if not any(counter.values()):
-                res.append(i)
-            i += 1 
-        return res   
+            for j in range(i,ws_len,word_len):
+                cur_word = s[j:j+word_len]
+                if cur_word in counter:
+                    counter[cur_word] -=1 
+                
+            
             
             
 # @lc code=end
 
+
+
+
+
+    # def findSubstring(self, s: str, words: List[str]) -> List[int]:
+    #     numword = len(words)
+    #     lenword = len(words[0])
+    #     totallen = numword*lenword
+    #     slen = len(s)
+    #     i = 0 
+    #     res = []
+    #     while i <= slen - totallen:
+    #         counter = Counter(words)
+    #         for j in range(i,i+totallen,lenword):
+    #             if s[j:j+lenword] in counter:
+    #                 counter[s[j:j+lenword]] -= 1  
+    #         if not any(counter.values()):
+    #             res.append(i)
+    #         i += 1 
+    #     return res   
+    ## 思路：愚蠢的暴力解。直接记数words,然后从头到尾比遍历s,若counter全为0则添加，否则不添加

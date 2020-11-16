@@ -6,11 +6,11 @@
 # https://leetcode-cn.com/problems/longest-valid-parentheses/description/
 #
 # algorithms
-# Hard (30.90%)
-# Likes:    842
+# Hard (33.99%)
+# Likes:    1047
 # Dislikes: 0
-# Total Accepted:    85.8K
-# Total Submissions: 258.9K
+# Total Accepted:    109.3K
+# Total Submissions: 321.6K
 # Testcase Example:  '"(()"'
 #
 # 给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度。
@@ -34,30 +34,64 @@
 # @lc code=start
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
-                m = len(obstacleGrid)
-        n = len(obstacleGrid[0])
-        
-        dp = [[0]*n]*m
-        if obstacleGrid[0][0] == 1:
-            return 0 
-        else:
-            dp[0][0] = 1 
+        left,right = 0,0  
+        ans = 0
+        for i in range(len(s)):
+            if s[i] == "(":
+                left += 1 
+            else:
+                right += 1 
+                
+            if left == right:
+                ans = max(ans,left+right)
             
-        for i in range(1,m):
-            if obstacleGrid[i][0] == 1:
-                break   
-            dp[i][0] = 1  
-        for j in range(1,n):
-            if obstacleGrid[0][j] == 1:
-                break 
-            dp[0][j] == 1
-            
-        for i in range(1,m):
-            for j in range(1,n):
-                if obstacleGrid[i][j] == 1:
-                    dp[i][j] == 0 
-                else:
-                    dp[i][j] == dp[i-1][j] + dp[i][j-1]
-        return dp[-1][-1]
+            if right > left:
+                left = right = 0 
+        left = right = 0 
+        for i in range(len(s)-1,-1,-1):
+            if s[i] == "(":
+                left += 1 
+            else:
+                right += 1 
+            if left == right:
+                ans = max(ans,left+right)
+            if right < left:
+                left = right = 0  
+        return ans 
+ 
+                 
+ 
 # @lc code=end
 
+    # def longestValidParentheses(self, s: str) -> int: ##DP
+    #     if not s:
+    #         return 0 
+    #     dp = [0]*len(s)
+    #     ans = 0
+    #     for i in range(1,len(s)):
+    #         if s[i] == ")":
+    #             if s[i-1] == "(":
+    #                 dp[i] = dp[i-2] + 2 if i - 2 >= 0 else 2 
+    #             else:
+    #                 if i -dp[i-1] > 0 and  s[i - dp[i-1] - 1] == "(":
+    #                     dp[i] = dp [i-1] + dp[i-dp[i-1]-2] + 2 if i - dp[i-1] - 2 >= 0 else dp[i-1] + 2 
+    #             ans = max(ans,dp[i])
+    #     return max(dp)
+    
+    
+    # def longestValidParentheses(self, s: str) -> int: ## 栈
+    #     if not s:
+    #         return 0
+    #     stack = [-1]
+    #     ans = 0
+    #     for i in range(len(s)):
+    #         if s[i] == "(":
+    #             stack.append(i)
+    #         else:
+    #             stack.pop() 
+    #             if not stack:
+    #                 stack.append(i)
+    #             else:
+    #                 ans = max(ans,i-stack[-1])
+                    
+    #     return ans

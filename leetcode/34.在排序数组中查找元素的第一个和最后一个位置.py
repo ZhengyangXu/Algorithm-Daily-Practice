@@ -34,16 +34,105 @@
 # @lc code=start
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        left,right = 0,len(nums)-1 
-        while left < right:
-            mid = left + (right - left +1 ) // 2
-            if nums[mid] == target:
-                first,last = mid,mid 
-                while nums[first-1] == target:
-                    first -= 1 
-                while nums[last-1] == target:
-                    last += 1 
-                return [first,last]
+        if not nums:
+            return [-1,-1]
+        def last(nums,target,right):
+
+            
+            low,high = -1,len(nums)-1
+            
+            while low < high:
+                mid = low + (high-low+1)//2 
+                if nums[mid] < target or (right and nums[mid] == target):
+                    low = mid  
+                else:
+                    high = mid - 1 
+            return high  
+        
+        right = last(nums,target,True)
+        if right == len(nums) or nums[right] != target:
+            return [-1,-1]
+        
+        return [last(nums,target,False)+1,last(nums,target,True)]
+
+ 
                 
 # @lc code=end
 
+    # def searchRange(self, nums: List[int], target: int) -> List[int]:
+    #     if len(nums) == 0:
+    #         return[-1,-1]
+    #     if len(nums) == 1 and target == nums[0]:
+    #         return [0,0]
+
+    #     def first(nums,target):
+
+    #         low,high = 0,len(nums)-1
+    #         while low < high:
+    #             mid = low + (high-low)//2
+    #             if nums[mid] == target:
+    #                 if nums[mid-1] < target:
+    #                     return mid
+    #                 else:
+    #                     high = mid  
+    #                     continue 
+    #             elif nums[mid] < target:
+    #                 low = mid + 1
+    #             else:
+    #                 high = mid 
+    #         if nums[low] == target:
+    #             return low
+    #         return -1 
+    #     def last(nums,target):
+
+    #         low,high = 0,len(nums)-1
+    #         while low < high:
+    #             mid = low + (high-low+1)//2
+    #             if nums[mid] == target:
+    #                 if mid == high or nums[mid+1] > target:
+    #                     return mid
+    #                 else:
+    #                     low = mid  
+    #                     continue 
+    #             elif nums[mid] > target:
+    #                 high = mid - 1 
+    #             else:
+    #                 low = mid
+    #         if nums[high] == target:
+    #             return high 
+    #         return -1 
+    #     left = first(nums,target)
+    #     right = last(nums,target)
+        
+    #     if left != -1 and right == -1:
+    #         return [left,left]
+    #     elif left == -1 and right != -1:
+    #         return [right,right]
+    #     else:
+    #         return [left,right]
+    #思路：这种解法corner case太多了，错了n次。就是用二分法找左右等于target的index，左边的就是左中位数，
+    #右边的就是有中位数。要注意考虑left=right的特殊解情况，这种解法太长了，思路和官方题解一样，但是官方
+    #题解短得多。
+    
+    
+        # def searchRange(self, nums: List[int], target: int) -> List[int]:
+        # if not nums:
+        #     return [-1,-1]
+        # def first(nums,target,left):
+
+            
+        #     low,high = 0,len(nums)
+            
+        #     while low < high:
+        #         mid = low + (high-low)//2 
+        #         if nums[mid] > target or (left and nums[mid] == target):
+        #             high = mid  
+        #         else:
+        #             low = mid + 1 
+        #     return low  
+        
+        # left = first(nums,target,True)
+        # if left == len(nums) or nums[left] != target:
+        #     return [-1,-1]
+        
+        # return [left,first(nums,target,False)-1]

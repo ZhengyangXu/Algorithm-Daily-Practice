@@ -49,41 +49,66 @@ class Solution:
         """
         Do not return anything, modify board in-place instead.
         """
-        rows = [0]*9
-        cols = [0]*9
-        cells = [[0]*3 for _ in range(3)]
-        tofill = []
-        valid = False 
-        for i in range(9):
-            for j in range(9):
-                if board[i][j] == ".":
-                    tofill.append((i,j))
-                else:
-                    num = int(board[i][j]) -1 
-                    rows[i] ^=  (1<<num)  
-                    cols[j] ^= (1<<num)  
-                    rows[i//3][j//3] ^= (1<<num)  
-                    
-        def backtrack(pos):
-            nonlocal valid
-            if pos == len(tofill):
-                valid = True  
+        
+        def flip(i,j,digit):
+            line[i] ^= (1<<digit)
+            column[j] ^= (1 << digit)
+            block[i//3][j//3] ^= (1<<digit)
+            
+        def dfs(pos):
+            nonlocal vlaid 
+            if pos == len(spaces):
+                valid = True 
                 return  
             
-            row,col = tofill[pos]
-            
-            for num in range(9):
-                if rows[row] >> num & 1 == cols[col] >> num & 1 == cells[row//3][col//3] >> num & 1 == 0:
-                    rows[row] = rows[row] | (1<<num)  
-                    cols[col] = rows[col] | (1<<num)  
-                    rows[row//3][col//3] = cells[row//3][col//3] | (1<<num) 
-                    board[row][col] = str(num + 1)
-                    backtrack(pos+1)
-                    rows[row] >> num = 1  
+            i,j = spaces[pos]
+            mask = ~(line[i]|column[j]|block[i//3][j//3]) & 0x1ff
+            while mask:
+                digitMask = mask & (-mask)
+                digit = bin(digitMask).count("0") - 1 
+                flip(i,j,digit)
+                board[i][j] = str(digit+1)
+                dfs(pos+1)
+                flip(i,j,digit)
+                mask &= (mask-1)
                 if valid:
-                    return  
+                    return   
+        line = [0]*9
+        column = [0]*9  
+        block = [[0]*3 for _ in range(3)]
+        valid = False  
+        spaces = []
+        
+        for i in range(9):
+            for j in range(9):
+                if board[i][j] != ".":
+                    digit = int(board[i][j]) - 1 
+                    flip(i,j,digit)
+                    
+        while True: 
+            modified = False  
+            for i in range(9):
+                for j in range(9):
+                    if board[i][j] == ".":
+                        mask = ~(line[i]|column[j]|block[i//3][j//3])&0x1ff
+                        if not (mask & (mask-1)):
+                            digit = bin(mask).count("0") - 1 
+                            flip(i,j,digit)
+                            board[i][j] = str(digit+1)
+                            modified = True  
+            if not modified:
+                break  
+        
+        for i in range(9):
+            for j in range(9):
+                if board[i][j]== ".":
+                    spaces.append((i,j))
+                    
+        
+        dfs(0)
                 
-        backtrack(0)
+            
+
                     
 
 

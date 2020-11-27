@@ -67,34 +67,18 @@
 class Solution:
     def isCousins(self, root: TreeNode, x: int, y: int) -> bool: ## 深度优先遍历 + 递归
         if not root:
-            return False 
-        dic= {}
-        def dfs(root,depth,parent,target):
-            if not root:
-                return
-            
-            if root.val == target:
-                dic[target] = (depth,parent)
-                
-            
-            dfs(root.left,depth+1,root.val,target)
-            dfs(root.right,depth+1,root.val,target)
-            
-            
-        
-        
-        dfs(root,0,0,x)
-        dfs(root,0,0,y)
-        if len(dic) != 2:
-            return False 
-        
-        lis = list(dic.values())
-        if lis[0][0] == lis[1][0] and lis[0][1] != lis[1][1]:
-            return True
-            
-         
-        return False 
-        
+            return False
+        parent ={}
+        depth = {}
+        def dfs(node,par):
+            if node:
+                depth[node.val] = 1 + depth[par] if par else 0 
+                parent[node.val] = par 
+                dfs(node.left,node.val)
+                dfs(node.right,node.val)
+        dfs(root,None)
+        return depth[x] == depth[y] and parent[x] != parent[y]
+ 
         
 # @lc code=end
 
@@ -122,3 +106,31 @@ class Solution:
     #             return True 
     #         cur = next 
     #     return False 
+    
+    
+        # def isCousins(self, root: TreeNode, x: int, y: int) -> bool: ## 深度优先遍历 + 递归
+        # if not root:
+        #     return False 
+        # dic= {}
+        # def dfs(root,depth,parent,target):
+        #     if not root:
+        #         return
+            
+        #     if root.val == target:
+        #         dic[target] = (depth,parent)
+                
+            
+        #     dfs(root.left,depth+1,root.val,target)
+        #     dfs(root.right,depth+1,root.val,target)
+            
+            
+        
+        
+        # dfs(root,0,0,x)
+        # dfs(root,0,0,y)
+        # if len(dic) != 2:
+        #     return False 
+        
+        # lis = list(dic.values())
+        # if lis[0][0] == lis[1][0] and lis[0][1] != lis[1][1]:
+        #     return True

@@ -42,16 +42,52 @@
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         if not root:
-            return []
-        stack = [root]
+            return []  
+        node = root  
+        stack = []
         res = []
-        while stack:
+        while stack or node:
+            while node:
+                stack.append(node)
+                res.append(node.val)
+                node = node.left 
+                
+    
+                 
             node = stack.pop()
-            res.append(node.val)
-            if node.right:
-                stack.append(node.right)
-            if node.left:
-                stack.append(node.left)
-        return res
+            node = node.right 
+        return res 
 # @lc code=end
 
+    # def preorderTraversal(self, root: TreeNode) -> List[int]:
+    #     if not root:
+    #         return []
+    #     stack = [root]
+    #     res = []
+    #     while stack:
+    #         node = stack.pop()
+    #         res.append(node.val)
+    #         if node.right:
+    #             stack.append(node.right)
+    #         if node.left:
+    #             stack.append(node.left)
+    #     return res
+    
+    
+        # def preorderTraversal(self, root: TreeNode) -> List[int]:
+        # if not root:
+        #     return []  
+        # node = root  
+        # stack = []
+        # res = []
+        # while stack or node:
+        #     if node:
+        #         stack.append(node)
+        #         res.append(node.val)
+        #         node = node.left 
+                 
+                
+        #     else:
+        #         node = stack.pop()
+        #         node = node.right
+        # return res 

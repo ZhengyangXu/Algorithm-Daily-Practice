@@ -35,7 +35,7 @@
 
 # @lc code=start
 class Solution:
-    def maxArea(self, height: List[int]) -> int: ## 双指针 看的答案 
+    def maxArea(self, height: List[int]) -> int: ##  
         l,r = 0,len(height)-1
         ans = 0 
         while l < r:

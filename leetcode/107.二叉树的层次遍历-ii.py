@@ -46,25 +46,46 @@
 
 class Solution:
     def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
+        
         if not root:
             return []
-        cur = [root]
         res = []
-
-        while cur: 
-            temp = []
-            next = []
-            for node in cur:
-                if node.left:
-                    next.append(node.left)
-                if node.right:
-                    next.append(node.right)
-                temp.append(node.val)
-            res.insert(0,temp)
-            cur = next  
-        return res 
+        def dfs(root,depth):
+            if not root:
+                return 
+            
+            if len(res) < depth:
+                res.append([])
+                
+            res[depth-1].append(root.val)
+            
+            dfs(root.left,depth+1)
+            dfs(root.right,depth+1)
+        
+        dfs(root,1)
+        return res[::-1]  
+            
                     
                     
                 
 # @lc code=end
 
+    # def levelOrderBottom(self, root: TreeNode) -> List[List[int]]: ##
+    #     if not root:
+    #         return []
+    #     cur = [root]
+    #     res = []
+
+    #     while cur: 
+    #         temp = []
+    #         next = []
+    #         for node in cur:
+    #             if node.left:
+    #                 next.append(node.left)
+    #             if node.right:
+    #                 next.append(node.right)
+    #             temp.append(node.val)
+    #         res.insert(0,temp)
+    #         cur = next  
+    #     return res 
+                    

@@ -42,23 +42,44 @@ class Solution:
     def rightSideView(self, root: TreeNode) -> List[int]:
         if not root:
             return []
-        ans = []
-        cur = [root]
-        
-        while cur:  
-            next = []
-            temp = [] 
-            for node in cur:
-                temp.append(node.val)  
-                if node.left:
-                    
-                    next.append(node.left)
-                if node.right:
-                    next.append(node.right)
+        res = []
+        def dfs(root,depth): 
+            if not root:
+                return 
+            if depth == len(res):
+                res.append(root.val)
+             
+            dfs(root.right,depth+1)
+            dfs(root.left,depth+1)
             
-            ans.append(temp[-1]) 
-            cur = next
-        return ans 
+    
+        
+        dfs(root,0)
+        return res
+            
+            
+            
+
                 
 # @lc code=end
 
+    # def rightSideView(self, root: TreeNode) -> List[int]: ## 递归
+    #     if not root:
+    #         return []
+    #     ans = []
+    #     cur = [root]
+        
+    #     while cur:  
+    #         next = []
+    #         temp = [] 
+    #         for node in cur:
+    #             temp.append(node.val)  
+    #             if node.left:
+                    
+    #                 next.append(node.left)
+    #             if node.right:
+    #                 next.append(node.right)
+            
+    #         ans.append(temp[-1]) 
+    #         cur = next
+    #     return ans 

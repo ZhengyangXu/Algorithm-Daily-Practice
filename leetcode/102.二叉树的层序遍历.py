@@ -48,23 +48,40 @@
 
 class Solution:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
-        res = []
+        
         if not root:
             return []
-        cur = [root]
-        while cur: 
-            next_layer = []
-            temp = []
-            for node in cur:
-                if node.left:
-                    next_layer.append(node.left)
-                if node.right:
-                    next_layer.append(node.right)
-                temp.append(node.val)
+        res = []
+        def dfs(root,depth):
+            if not root:
+                return 
+            if depth > len(res):
+                res.append([])
             
-            res.append(temp)
-            cur = next_layer 
+            
+            dfs(root.left,depth+1)
+            dfs(root.right,depth+1)
+            res[depth-1].append(root.val)
+        dfs(root,1)
         return res 
 
 # @lc code=end
 
+    # def levelOrder(self, root: TreeNode) -> List[List[int]]:
+    #     res = []
+    #     if not root:
+    #         return []
+    #     cur = [root]
+    #     while cur: 
+    #         next_layer = []
+    #         temp = []
+    #         for node in cur:
+    #             if node.left:
+    #                 next_layer.append(node.left)
+    #             if node.right:
+    #                 next_layer.append(node.right)
+    #             temp.append(node.val)
+            
+    #         res.append(temp)
+    #         cur = next_layer 
+    #     return res 

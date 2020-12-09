@@ -73,3 +73,6 @@ class Solution:
 #         return dp[-1][-1]
                 
 
+    # def uniquePaths(self, m: int, n: int) -> int:
+    #     # 排列组合
+    #     return int(factorial(m+n-2)/(factorial(m-1)*factorial(n-1)))

@@ -44,20 +44,42 @@ class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         if not matrix:
             return []
-        rstart,rend,cstart,cend = 0,len(matrix)-1,0,len(matrix[0])-1
+        left,right,bottom,top = 0,len(matrix)-1,0,len(matrix[0])-1
+        num = len(matrix)*len(matrix[0])
         res = []
-        while rstart <= rend and cstart <= cend:
-            for i in range(cend+1):
-                res.append(matrix[rstart][i])
+        while num > 0 and bottom <= top and left <= right:
+            for i in range(left,right+1):
+                res.append(matrix[bottom][i])
+                num -= 1
+            if num > 0:
+                bottom += 1
+            else:
+                break 
+            for i in range(bottom,top+1):
+                res.append(matrix[i][right])
+                num -= 1
+            if num > 0:
+                right -= 1
+            else:
+                break 
+            
+            for i in range(right,left-1,-1):
+                res.append(matrix[top][i])
+                num -= 1
+            if num > 0:
+                top -= 1 
+            else:
+                break 
                 
-            for j in range(rstart+1,rend+1):
-                res.append(matrix[j][cend])
-                
-            if rstart < rend and cstart < cend:
-                for i in range(rend-1,rstart,-1):
-                    res.append(matrix[i][cstart])
-                    
-                for i in range()
+            for i in range(top,bottom-1,-1):
+                res.append(matrix[i][left])
+                num -= 1
+            if num > 0:
+                left += 1 
+            else:
+                break
+
+        return res
        
                 
         
@@ -100,3 +122,30 @@ class Solution:
 #             j += 1
 #             i += 1
 #         return res[0:len(matrix)*len(matrix[0])]    
+
+
+
+    # def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+    #     if not matrix:
+    #         return []
+    #     rstart,rend,cstart,cend = 0,len(matrix)-1,0,len(matrix[0])-1
+    #     res = []
+    #     while rstart <= rend and cstart <= cend:
+    #         for i in range(cstart,cend+1):
+    #             res.append(matrix[rstart][i])
+                
+    #         for j in range(rstart+1,rend+1):
+    #             res.append(matrix[j][cend])
+                
+    #         if rstart < rend and cstart < cend:
+    #             for i in range(cend-1,cstart,-1):
+    #                 res.append(matrix[rend][i])
+                    
+    #             for i in range(rend,rstart,-1):
+    #                 res.append(matrix[i][cstart])
+                    
+    #         rstart += 1
+    #         rend -= 1
+    #         cstart += 1
+    #         cend -= 1
+    #     return res

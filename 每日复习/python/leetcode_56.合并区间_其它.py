@@ -43,28 +43,35 @@
 #
 
 # @lc code=start
-class Solution:
-    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        intervals.sort(key=lambda x:x[0])
-        res = []
-        
-        for l,r in intervals:
-            if not res or  l > res[-1][1]:
-                res.append([l,r])
-            else:
-                res[-1][1] = max(r,res[-1][1])  
-        return res 
-
-# @lc code=end
 
     # def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-    #     intervals.sort(key=lambda x:x[0])
+    #     size = len(intervals)
+    #     if size == 0 or size == 1:
+    #         return intervals  
     #     res = []
-        
-    #     for l,r in intervals:
-    #         if len(res) == 0 or l > res[-1][1]:
-    #             res.append([l,r])
+    #     intervals.sort(key=lambda x:x[0])
+    #     for i in range(size):
+    #         if not res or res[-1][1] < intervals[i][0]:
+    #             res.append(intervals[i])
     #         else:
-    #             res[-1][0],res[-1][1] = min(l,res[-1][0]),max(r,res[-1][1])
-                
+    #             res[-1][1] = max(res[-1][1],intervals[i][1])
+        
     #     return res 
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        size = len(intervals)
+        if size == 0 or size == 1:
+            return intervals  
+        res = []
+        intervals.sort(key=lambda x:x[0])
+        
+        i = 0 
+        while i < size:
+            if res and res[-1][1] >= intervals[i][0]:
+                res[-1][1] = max(res[-1][1],intervals[i][1])
+            else:
+                res.append(intervals[i])
+            i += 1     
+        return res
+                
+    

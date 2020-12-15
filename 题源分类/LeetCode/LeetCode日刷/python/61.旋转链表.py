@@ -71,14 +71,7 @@ class Solution:
         cur.next = head  
         
         return newhead 
-        
-          
-        
-          
-            
-        
-     
-        
+
         return dummy.next  
             
             

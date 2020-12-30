@@ -1,2 +1,5 @@
-    nums = [7,8,9,10,0,1,2,3]
-    print(minRotate(nums)) 
+der2(root2)
+    print("************中序遍历*********")
+    inorder2(root2)
+    print("************后序遍历*********")
+    print(postorder(root2))

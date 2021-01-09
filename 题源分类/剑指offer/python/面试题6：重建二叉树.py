@@ -32,6 +32,28 @@ def buildTree(preorder,inorder):
     return root  
 
 def buildTree_iter(preorder,inorder):
+    if not preorder:
+        return
+    pre = 1
+    ino = 0
+    
+    
+    curRoot = TreeNode(preorder[0])
+    roots = [curRoot]
+    
+    while pre < len(preorder):
+        if curRoot.val == inorder[ino]:
+            while roots and roots[-1] == inorder[ino]:
+                curRoot = roots.pop()
+                ino += 1
+                
+            curRoot.right = TreeNode(preorder[pre])
+            curRoot = curRoot.right 
+            
+        
+    
+    
+     
 
         
 

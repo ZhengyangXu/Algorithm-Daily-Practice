@@ -1,5 +1,1 @@
-der2(root2)
-    print("************中序遍历*********")
-    inorder2(root2)
-    print("************后序遍历*********")
-    print(postorder(root2))
+mergeRec

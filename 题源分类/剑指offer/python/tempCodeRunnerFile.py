@@ -1,1 +1,2 @@
-mergeRec
+
+        right -= 1

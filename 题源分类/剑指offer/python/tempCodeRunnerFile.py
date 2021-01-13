@@ -1,2 +1,1 @@
-
-        right -= 1
+            # print(path)

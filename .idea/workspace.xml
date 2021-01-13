@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9faf859-dbee-4d3d-9480-e04e08bef6aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/leetcode_60.排列序列2刷.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/leetcode_60.排列序列_3刷.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/leetcode_60.排列序列_4刷.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/剑指offer_3.二维数组中的查找_2刷.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/剑指offer_8.旋转数组的最小数字.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/归并排序_2刷.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/归并排序_3刷.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/归并排序_4刷.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/程序员面试代码指南_如何仅用递归函数和栈操作拟于一个栈_4刷.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/程序员面试代码指南_如何仅用递归函数和栈操作逆序一个栈_3刷.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/每日复习/python/程序员面试代码指南_如何归函数和栈操作逆序一个栈.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/题源分类/LeetCode/LeetCode日刷/python/65.有效数字.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/题源分类/剑指offer/python/tempCodeRunnerFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/题源分类/剑指offer/python/面试题3：二维数组中的查找.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/题源分类/剑指offer/python/面试题8：旋转数组的最小数字.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/题源分类/面试面经/python/tempCodeRunnerFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/题源分类/面试面经/python/归并排序.py" afterDir="false" />
-    </list>
+    <list default="true" id="b9faf859-dbee-4d3d-9480-e04e08bef6aa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,6 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b9faf859-dbee-4d3d-9480-e04e08bef6aa" name="Default Changelist" comment="" />
@@ -51,5 +35,11 @@
       <updated>1609218850872</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="154" y="87" key="new project wizard" timestamp="1610362436651">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="154" y="87" key="new project wizard/0.0.1680.1010@0.0.1680.1010" timestamp="1610362436651" />
   </component>
 </project>

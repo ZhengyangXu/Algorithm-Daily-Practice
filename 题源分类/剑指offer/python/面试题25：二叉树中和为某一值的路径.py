@@ -33,16 +33,20 @@ def pathSum(root,target):
     return res 
 
 
-def pathSumRecur(root,target,path):
+def pathSumRecur(root,target,path,res):
+    if not root or root.val > target:
+        return  
     if root:
         path += str(root.val)
-    
-        
-
-            
-
-
+        if root.val == target:
+            if not root.left and not root.right:
+                res.append(path)
+        else:
+            path += "->"
+            pathSumRecur(root.left,target-root.val,path,res)
+            pathSumRecur(root.right,target-root.val,path,res)
     return res 
+
 
 if __name__ == "__main__":
                 
@@ -56,9 +60,11 @@ if __name__ == "__main__":
     node2.left = node4 
     node2.right = node5 
     
-    print(pathSum(node1,22))
+    # print(pathSum(node1,22))
     # binaryTreePaths(node1)
     # print(binaryTreePaths(node1))
+    print(pathSumRecur(node1,22,"",[]))
+    
 
     
             

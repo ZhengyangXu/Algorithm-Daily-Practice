@@ -1,2 +1,2 @@
-    # while head and head.left:
-    #     head = head.left 
+    if root and (not root.left or not root.right):
+        return depth

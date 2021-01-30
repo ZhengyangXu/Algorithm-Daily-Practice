@@ -42,26 +42,36 @@
 # @lc code=start
 class Solution:
     from collections import Counter
+    # def lengthOfLongestSubstring(self, s: str) -> int:
+    #     if not s:
+    #         return 0  
+    #     l,r = 0,0 
+    #     res = 0 
+    #     window = Counter()
+    #     while r  < len(s):
+    #         c1 = s[r]
+    #         window[c1] += 1  
+    #         r += 1  
+    #         while window[c1] > 1:
+    #             c2 = s[l]
+    #             window[c2] -= 1  
+    #             l += 1 
+    #         res = max(res,r-l)
+    #     return res 
     def lengthOfLongestSubstring(self, s: str) -> int:
         if not s:
-            return 0  
-        l,r = 0,0 
-        res = 0 
-        window = Counter()
-        while r  < len(s):
-            c1 = s[r]
-            window[c1] += 1  
-            r += 1  
-            while window[c1] > 1:
-                c2 = s[l]
-                window[c2] -= 1  
-                l += 1 
-            res = max(res,r-l)
-        return res 
-        
-    
+            return 0 
+        block = 0 
+        map = dict()
+        res = 0  
+        for i in range(len(s)):
             
-  
+            if s[i] in map and map[s[i]] >= block: 
+                block = map[s[i]] + 1 
+            
+            res = max(res,i-block+1)
+            map[s[i]] = i 
+        return res 
                     
 # @lc code=end
     # def lengthOfLongestSubstring(self, s: str) -> int:
@@ -98,3 +108,21 @@ class Solution:
     #                 l += 1   
     #         res = max(res,r-l)
     #     return res      
+    # def lengthOfLongestSubstring(self, s: str) -> int:
+    #     if not s:
+    #         return 0 
+    #     dp = [1 for _ in range(len(s))]
+    #     dic = dict() 
+    #     dic[s[0]] = 0
+        
+    #     for i in range(1,len(s)):
+    #         if s[i] not in dic:
+    #             dp[i] = dp[i-1] + 1 
+    #         else:
+    #             if i - dic[s[i]] > dp[i-1]:
+    #                 dp[i] = dp[i-1] + 1 
+    #             else:
+    #                 dp[i] = i - dic[s[i]]
+                    
+    #         dic[s[i]] = i  
+    #     return max(dp)

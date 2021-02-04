@@ -77,6 +77,25 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        
+        left,right = 0,0 
+        
+        for mid in range(len(nums)):
+            if nums[mid] == 0:
+                if mid != right:
+                    nums[mid],nums[right] = nums[right],nums[mid]
+                if right != left:
+                    nums[left],nums[right] = nums[right],nums[left]
+                left += 1 
+                right += 1 
+            elif nums[mid] == 1:
+                if mid != right:
+                    nums[mid],nums[right] = nums[right],nums[mid]
+                right += 1 
+
+
+            
+                
 
         
         

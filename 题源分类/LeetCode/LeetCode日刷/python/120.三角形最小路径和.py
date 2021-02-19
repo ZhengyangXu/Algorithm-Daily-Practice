@@ -66,10 +66,10 @@ class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         
         size = len(triangle)
-        dp = [[0]*(size+1) for _ in range(size+1)]
+        dp = [[0]*(len(triangle[-1])+1) for _ in range(size+1)]
         
         for i in range(size-1,-1,-1):
-            for j in range(i):
+            for j in range(len(triangle[i])-1,-1,-1):
                 dp[i][j] = min(dp[i+1][j],dp[i+1][j+1])+triangle[i][j]
         
 
@@ -93,3 +93,16 @@ class Solution:
     #         return memo[depth][index]
         
     #     return dfs(triangle,0,0)
+    
+        # def minimumTotal(self, triangle: List[List[int]]) -> int:
+        
+        # size = len(triangle)
+        # dp = [[0]*(len(triangle[-1])+1) for _ in range(size+1)]
+        
+        # for i in range(size-1,-1,-1):
+        #     for j in range(len(triangle[i])-1,-1,-1):
+        #         dp[i][j] = min(dp[i+1][j],dp[i+1][j+1])+triangle[i][j]
+        
+
+        # return dp[0][0]
+        

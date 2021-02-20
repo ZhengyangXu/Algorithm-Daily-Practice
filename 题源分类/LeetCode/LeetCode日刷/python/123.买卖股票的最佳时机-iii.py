@@ -46,6 +46,38 @@
 
 # @lc code=start
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+   def maxProfit(self, prices: List[int]) -> int: ## 动态规划
+        if not prices:
+            return 0 
+        s,k,n = 2,2,len(prices)
+        dp = [[[0 for _ in range(s)] for _ in range(k+1)] for _ in range(n)]
+        
+        
+        for i in range(n):
+            for j in range(k+1):
+                if i == 0:
+                    dp[i][j][0] = 0
+                    dp[i][j][1] = -prices[0]
+                dp[i][j][0] = max(dp[i-1][j][0],dp[i-1][j][1]+prices[i])
+                dp[i][j][1] = max(dp[i-1][j][1],dp[i-1][j-1][0]-prices[i])
+                
+        return dp[n-1][2][0]
 # @lc code=end
 
+ 
+    
+    
+    # def maxProfit(self, prices: List[int]) -> int: ## 动态规划
+    #     if not prices:
+    #         return 0 
+    #     s,k,n = 2,2,len(prices)
+        
+    #     dp10,dp11 = 0, -float('inf')
+    #     dp20,dp21 = 0, -float('inf')
+        
+    #     for price in prices:
+    #         dp20 = max(dp20,dp21+price)
+    #         dp21 = max(dp21,dp10-price)
+    #         dp10 = max(dp10,dp11+price)
+    #         dp11 = max(dp11,-price)
+    #     return dp20

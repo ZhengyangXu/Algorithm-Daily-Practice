@@ -1,1 +1,1 @@
-            print("left:{},right:{}".format(left,right))
+    # print(circleOut(6,2))

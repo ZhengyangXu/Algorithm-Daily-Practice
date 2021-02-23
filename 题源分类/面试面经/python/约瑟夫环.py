@@ -38,12 +38,14 @@ res = []
 def circleOutRec(n,m):
     if n == 0:
         return n
-    
-    return (circleOutRec(n-1,m)+m)%n
+    # if circleOutRec(n-1,m):
+    #     res.append((circleOutRec(n-1,m)+m)%n)
+    print(n)
+    print((circleOutRec(n,m)+m)%n)
     
     
     
 if __name__ == "__main__":
     # print(circleOut(6,2))
-    circleOutRec(6,2)
-    print(res)
+    print(circleOutRec(6,2))
+    

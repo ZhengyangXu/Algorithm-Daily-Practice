@@ -43,7 +43,6 @@ res = []
 def circleOutRec(n, m):
     if n == 0:
         return n
-<<<<<<< HEAD
 
     return (circleOutRec(n - 1, m) + m) % n
 
@@ -51,16 +50,3 @@ def circleOutRec(n, m):
 if __name__ == "__main__":
     # print(circleOut(6,2))
     print(circleOutRec(6, 2))
-=======
-    # if circleOutRec(n-1,m):
-    #     res.append((circleOutRec(n-1,m)+m)%n)
-    print(n)
-    print((circleOutRec(n,m)+m)%n)
-    
-    
-    
-if __name__ == "__main__":
-    # print(circleOut(6,2))
-    print(circleOutRec(6,2))
-    
->>>>>>> 2cc50bdd6fdca83d3d8fa674663188095df86d86

@@ -41,15 +41,15 @@ class Solution:
     def findRelativeRanks(self, score: List[int]) -> List[str]:
         
         n = len(score)
-
+        res=[0]*n
         for i in range(n):
             count = 1
             for j in range(n):
                 if score[j] > score[i]:
                     count += 1
-            score[i] = count
+            res[i] = count
             
-            
+        score = res    
         for i in range(n):
             if score[i] == 1:
                 score[i] = "Gold Medal"

@@ -89,16 +89,22 @@ class Solution:
     def summaryRanges(self, nums: List[int]) -> List[str]:
         res = [] 
         
-        i = start = 0 
-        size = len(nums)
-        
-        while i < size-1:
-            if nums[i+1] - nums[i] != 1:
-                res.append(str(nums[start]) + '' if i - start == 1 else '->' + str(nums[i]) )
-                start = i 
-            i += 1 
-
+        i = start = 0
+        for i in range(1,len(nums)):
+            if nums[i] - nums[i-1] != 1:
+                if i == start:
+                    res.append(str(nums[start]))
+                else:
+                    res.append(str(nums[start])+"->"+str(nums[i-1]))
                 
-        return res  
+                start = i 
+                
+        return res   
+                
+                    
+                    
+
+  
+        return res        
 # @lc code=end
 

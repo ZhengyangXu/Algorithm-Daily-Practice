@@ -40,27 +40,52 @@
 class Solution:
     def findRelativeRanks(self, score: List[int]) -> List[str]:
         
-        n = len(score)
-        res=[0]*n
-        for i in range(n):
-            count = 1
-            for j in range(n):
-                if score[j] > score[i]:
-                    count += 1
-            res[i] = count
+        res = []
+        for i in range(len(score)):
+            res.append((score[i],i))
             
-        score = res    
-        for i in range(n):
-            if score[i] == 1:
-                score[i] = "Gold Medal"
-            elif score[i] == 2:
-                score[i] = "Silver Medal"
-            elif score[i] == 3:
-                score[i] = "Bronze Medal"
+        res = sorted(res,key=lambda x:x[0],reverse=True)
+        
+        for i in range(len(score)):
+            if i == 0:
+                score[res[i][1]] = "Gold Medal"
+            elif i == 1:
+                score[res[i][1]] = "Silver Medal"
+            elif i == 2:
+                score[res[i][1]] = "Bronze Medal"
             else:
-                score[i] = str(score[i])    
+                score[res[i][1]] = str(i+1)
                 
+        
         return score
+        
+
         
 # @lc code=end
 
+    # def findRelativeRanks(self, score: List[int]) -> List[str]:
+        
+    #     n = len(score)
+    #     res=[0]*n
+    #     for i in range(n):
+    #         count = 1
+    #         for j in range(n):
+    #             if score[j] > score[i]:
+    #                 count += 1
+    #         res[i] = count
+            
+    #     score = res    
+    #     for i in range(n):
+    #         if score[i] == 1:
+    #             score[i] = "Gold Medal"
+    #         elif score[i] == 2:
+    #             score[i] = "Silver Medal"
+    #         elif score[i] == 3:
+    #             score[i] = "Bronze Medal"
+    #         else:
+    #             score[i] = str(score[i])    
+                
+    #     return score
+
+## 思路：1、记录原数组的index后排序，排序后的数组就是真正的排名，然后按照原来的index还原
+##      2、记录大于list里出自己外的个数，就是排名，然后转换

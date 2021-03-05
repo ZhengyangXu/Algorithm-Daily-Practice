@@ -74,8 +74,8 @@ var lengthOfLIS = function(nums) {
 
     dp[0] = 1
 
-    for(let i = 1; i < n; i++){
-        for (let j = 0; j < i; j++){
+    for(var i = 1; i < n; i++){
+        for (var j = 0; j < i; j++){
             if(nums[i] > nums[j]){
                 dp[i] = Math.max(dp[i],dp[j]+1)
             }
@@ -83,7 +83,7 @@ var lengthOfLIS = function(nums) {
     }
 
     ans = 0 
-    for(let i = 0;i<dp.length;i++){
+    for(i = 0;i<dp.length;i++){
         ans = Math.max(dp[i],ans)
     }
 

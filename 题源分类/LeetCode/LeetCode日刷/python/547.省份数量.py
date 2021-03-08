@@ -62,26 +62,27 @@
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int: # 并查集
         provinces = len(isConnected)
-        parent =[i for i in range(provinces)]
-        
+        parent = [i for i in range(provinces)]
         
         def find(index):
             if parent[index] != index:
-                parent[index] = find(parent[index])  
+                parent[index] = find(parent[index])
+            
             return parent[index]
+        
         
         def union(index1,index2):
             parent[find(index1)] = find(index2)
             
         
         for i in range(provinces):
-            for j in range(i+1,provinces):
+            for j in range(i+1,len(isConnected[i])):
                 if isConnected[i][j] == 1:
                     union(i,j)
                     
-        
         return sum(parent[i] == i for i in range(provinces))
-
+            
+            
                     
                 
                     

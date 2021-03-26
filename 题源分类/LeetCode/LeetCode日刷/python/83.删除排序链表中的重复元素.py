@@ -36,18 +36,32 @@
 #         self.next = None
 
 class Solution:
-    def deleteDuplicates(self, head: ListNode) -> ListNode:
+    def deleteDuplicates(self, head: ListNode) -> ListNode:#递归
         if not head or not head.next:
             return head   
         
-        cur = head  
-        
-        while cur and cur.next: 
-            while cur.next and cur.val == cur.next.val:
-                cur.next = cur.next.next  
-            cur = cur.next  
-
+        if head.next.val != head.val:
+            head.next = self.deleteDuplicates(head.next)
+        else:
+            p = head.next  
+            while p.next and p.next.val == head.val:
+                p = p.next 
+            return self.deleteDuplicates(p)
         return head 
+        
+
+        
+        # if head.val != head.next.val:
+        #     head.next = self.deleteDuplicates(head.next)
+        # else:
+        #     p = head.next
+        #     while p and p.val == head.val:
+        #         p = p.next  
+        #     return self.deleteDuplicates(p)
+        # return head 
+
+        
+
 # @lc code=end
 
     # def deleteDuplicates(self, head: ListNode) -> ListNode:
@@ -86,3 +100,25 @@ class Solution:
                 
     #     p1.next = None  
     #     return head 
+    
+    
+        # def deleteDuplicates(self, head: ListNode) -> ListNode:
+        # if not head or not head.next:
+        #     return head   
+        
+        # cur = head  
+        
+        # while cur and cur.next: 
+        #     while cur.next and cur.val == cur.next.val:
+        #         cur.next = cur.next.next  
+        #     cur = cur.next  
+
+        # return head 
+        
+    # def deleteDuplicates(self, head: ListNode) -> ListNode:#递归
+    #     if not head or not head.next:
+    #         return head   
+        
+    #     head.next = self.deleteDuplicates(head.next)
+        
+    #     return head  if head.val != head.next.val else head.next 

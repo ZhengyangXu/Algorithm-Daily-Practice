@@ -55,13 +55,27 @@ class Solution:
         if not matrix:
             return False  
         row,col = 0,len(matrix[0])-1
+         
         while row < len(matrix) and col >= 0:
             if target == matrix[row][col]:
                 return True  
-            elif target > matrix[row][col]:
-                row += 1 
-            else:
+            elif target < matrix[row][col]:
                 col -= 1 
+            else:
+                row += 1 
         return False 
-# @lc code=end
 
+# @lc code=end
+    # def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+    #     if not matrix:
+    #         return False  
+    #     row,col = 0,len(matrix[0])-1
+    #     while row < len(matrix) and col >= 0:
+    #         if target == matrix[row][col]:
+    #             return True  
+    #         elif target > matrix[row][col]:
+    #             row += 1 
+    #         else:
+    #             col -= 1 
+    #     return False 
+0

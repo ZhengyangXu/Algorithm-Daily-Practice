@@ -48,16 +48,29 @@ class Solution:
                 
         
         
-        def backtrack2(i,n,path):
+        # def backtrack2(i,n,path):
+        #     res.append(path)
+            
+        #     for k in range(i,n):
+        #         if k > i and nums[k] == nums[k-1]:
+        #             continue  
+        #         else:
+        #             backtrack2(k+1,n,path+[nums[k]])
+                    
+        # backtrack2(0,n,[])
+        
+        
+        def backtrack3(i,path):
+            path = path[:]
             res.append(path)
             
             for k in range(i,n):
                 if k > i and nums[k] == nums[k-1]:
-                    continue  
-                else:
-                    backtrack2(k+1,n,path+[nums[k]])
-                    
-        backtrack2(0,n,[])
+                    continue
+                path.append(nums[k])
+                backtrack3(k+1,path)
+                path.pop()
+            backtrack3(0,[])
         return res 
 # @lc code=end
 

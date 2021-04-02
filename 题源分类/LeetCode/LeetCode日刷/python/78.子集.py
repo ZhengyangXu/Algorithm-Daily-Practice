@@ -51,13 +51,18 @@ class Solution:
         res = [] 
         n = len(nums)
         
-        for mask in range(1<<n):
-            path = []
-            for i in range(n):
-                if (mask & (1<<i)) != 0:
-                    path.append(nums[i])
-                    
+        def backtrack(i,path):
+            path = path[:]
             res.append(path)
+            
+            for k in range(i,n):
+                path.append(nums[k])
+                backtrack(k+1,path)
+                path.pop()
+        
+        backtrack(0,[])
+        
+
         return res  
             
 # @lc code=end
@@ -93,3 +98,15 @@ class Solution:
             
     #     return res 
             
+    # def subsets(self, nums: List[int]) -> List[List[int]]:
+    #     res = [] 
+    #     n = len(nums)
+        
+    #     for mask in range(1<<n):
+    #         path = []
+    #         for i in range(n):
+    #             if (mask & (1<<i)) != 0:
+    #                 path.append(nums[i])
+                    
+    #         res.append(path)
+    #     return res              

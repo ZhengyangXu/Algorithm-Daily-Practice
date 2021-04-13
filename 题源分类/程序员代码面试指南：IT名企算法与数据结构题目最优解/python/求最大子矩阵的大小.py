@@ -18,14 +18,14 @@ def maxRecFromBottom(matrix):
     for i in range(len(height)):
         while stack and height[i] <= height[stack[-1]]:
             cur = stack.pop()
-            maxArea = max(maxArea,
-                          height[cur] * ((i - stack[-1] - 1) if stack else -1))
+            k = -1 if not stack else stack[-1]
+            maxArea = max(maxArea, height[cur] * (i - k - 1))
         stack.append(i)
 
     while stack:
         cur = stack.pop()
-        curArea = (
-            (len(height) - stack[-1] - 1) if stack else -1) * height[cur]
+        k = -1 if stack else stack[-1]
+        curArea = (i - k - 1) * height[cur]
         maxArea = max(maxArea, curArea)
 
     return maxArea

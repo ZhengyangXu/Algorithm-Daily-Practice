@@ -37,65 +37,42 @@
 #
 
 # @lc code=start
+class Node(object):
+    def __init__(self):
+        self.children = collections.defaultdict(Node)
+        self.isword = False 
+
 class Trie:
     
-    class Node:
-        def __init__(self):
-            self.is_word = False 
-            self.dict = {}
-
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
-        self.root = Trie.Node()
-  
-
-
-    def insert(self, word: str) -> None:
-        """
-        Inserts a word into the trie.
-        """
-        cur_node = self.root 
-        for alpha in word:
-            if alpha not in cur_node.dict:
-                cur_node.dict[alpha] = Trie.Node() 
-            
-            cur_node = cur_node.dict[alpha]
+        self.root = Node()
         
-        if not cur_node.is_word:
-            cur_node.is_word = True
-            
-            
-
-
-    def search(self, word: str) -> bool:
-        """
-        Returns if the word is in the trie.
-        """
-        cur_node = self.root 
-        for alpha in word:
-            if alpha not in cur_node.dict: 
-                return False 
-            else:
-                cur_node = cur_node.dict[alpha]
-        
-        return cur_node.is_word
     
-
-
-    def startsWith(self, prefix: str) -> bool:
-        """
-        Returns if there is any word in the trie that starts with the given prefix.
-        """
-        cur_node = self.root 
-        for alpha in prefix:
-            if alpha not in cur_node.dict:
-                return False 
-            else:
-                cur_node = cur_node.dict[alpha]
+    def insert(self,word):
+        current = self.root
+        for w in word:
+            current = current.children[w]
+            
+        current.isword = True 
         
+    def search(self,word):
+        current = self.root 
+        for w in word:
+            current = current.children.get(w)
+            if not current:
+                return False 
+        return current.isword
+    
+    def startsWith(self,prefix):
+        current = self.root 
+        for w in prefix:
+            current = current.children.get(w)
+            if not current:
+                return False 
         return True 
+
+
+
 
 
 
@@ -106,3 +83,62 @@ class Trie:
 # param_3 = obj.startsWith(prefix)
 # @lc code=end
 
+# class Trie:
+    
+#     class Node:
+#         def __init__(self):
+#             self.is_word = False 
+#             self.dict = {}
+
+#     def __init__(self):
+#         """
+#         Initialize your data structure here.
+#         """
+#         self.root = Trie.Node()
+  
+
+
+#     def insert(self, word: str) -> None:
+#         """
+#         Inserts a word into the trie.
+#         """
+#         cur_node = self.root 
+#         for alpha in word:
+#             if alpha not in cur_node.dict:
+#                 cur_node.dict[alpha] = Trie.Node() 
+            
+#             cur_node = cur_node.dict[alpha]
+        
+#         if not cur_node.is_word:
+#             cur_node.is_word = True
+            
+            
+
+
+#     def search(self, word: str) -> bool:
+#         """
+#         Returns if the word is in the trie.
+#         """
+#         cur_node = self.root 
+#         for alpha in word:
+#             if alpha not in cur_node.dict: 
+#                 return False 
+#             else:
+#                 cur_node = cur_node.dict[alpha]
+        
+#         return cur_node.is_word
+    
+
+
+#     def startsWith(self, prefix: str) -> bool:
+#         """
+#         Returns if there is any word in the trie that starts with the given prefix.
+#         """
+#         cur_node = self.root 
+#         for alpha in prefix:
+#             if alpha not in cur_node.dict:
+#                 return False 
+#             else:
+#                 cur_node = cur_node.dict[alpha]
+        
+#         return True 

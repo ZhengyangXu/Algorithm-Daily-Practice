@@ -71,6 +71,7 @@
 
 # @lc code=start
 class Solution:
+    @functools.lru_cache(None)
     def isScramble(self, s1: str, s2: str) -> bool:
         if len(s1) != len(s2):
             return False 

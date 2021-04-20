@@ -66,18 +66,29 @@
 # @lc code=start
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
-        
         if not nums:
-            return 0
-        
-        i = 0 
-        for j in range(len(nums)):
-            if nums[j] != val:
-                if j>i:
-                    nums[i] = nums[j]
-                i += 1  
-        
-        return i
+            return 0 
+        j = 0 
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[j] = nums[i] 
+                j += 1 
+        return j 
+     
         
 # @lc code=end
 
+    # def removeElement(self, nums: List[int], val: int) -> int:
+        
+    #     if not nums:
+    #         return 0
+        
+    #     i = 0 
+    #     for j in range(len(nums)):
+    #         if nums[j] != val:
+    #             if j>i:
+    #                 nums[i] = nums[j]
+    #             i += 1  
+        
+    #     return i
+        

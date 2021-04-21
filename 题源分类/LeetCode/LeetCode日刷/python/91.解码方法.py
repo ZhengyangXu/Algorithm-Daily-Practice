@@ -80,24 +80,61 @@ class Solution:
     def numDecodings(self, s: str) -> int:
         if not s:
             return 0 
-        dp = [0 for _ in range(len(s))]
-        dp[0] = 0 if s[0] == '0' else 1
-        
-        for i in range(1,len(s)):
+        d1,d2 = 0,1 
+        n = len(s)
+        for i in range(1,n+1):
+            d3 = 0 
             if s[i] != '0':
-                dp[i] += dp[i-1]
+                d3 += d2 
+            if i > 1 and s[i-2] != '0' and int(s[i-2:i]) <= 26:
+                d3 += d1  
             
-            num = int(s[i-1:i+1])
-            
-            if num > 9 and num < 27:
-                if i - 2 < 0:
-                    dp[i] += 1 
-                else:
-                    dp[i] += dp[i-2]
+            d1,d2 = d2,d3
+        return d3 
                 
-        return dp[-1]
+
                 
         
 
 # @lc code=end
 
+    # def numDecodings(self, s: str) -> int:
+    #     if not s:
+    #         return 0 
+    #     dp = [0 for _ in range(len(s))]
+    #     dp[0] = 0 if s[0] == '0' else 1
+        
+    #     for i in range(1,len(s)):
+    #         if s[i] != '0':
+    #             dp[i] += dp[i-1]
+            
+    #         num = int(s[i-1:i+1])
+            
+    #         if num > 9 and num < 27:
+    #             if i - 2 < 0:
+    #                 dp[i] += 1 
+    #             else:
+    #                 dp[i] += dp[i-2]
+                
+    #     return dp[-1]
+
+
+    # def numDecodings(self, s: str) -> int:
+    #     if not s:
+    #         return 0 
+    #     n = len(s)
+    #     dp = [1] + [0] * n 
+        
+    #     for i in range(1,n+1):
+    #         if s[i-1] != '0':
+    #             dp[i] += dp[i-1]
+                
+    #         if i > 1 and s[i-2] != '0' and int(s[i-2:i]) <= 26:
+    #             dp[i] += dp[i-2]
+                
+    #     return dp[n]
+#思路:
+# 使用动态规划,dp[i] 代表s[:i]的解码方法。编码只有两种,一种是一位数字,只要s[i-1]不
+##是0,当前位置的编码方法dp[i]就可以加1;一种是两位数,只要s[i-2:i]小于等于26，且s[i-2]不等于0，因
+# 为有规定06不能算是2位数编码,dp[i]就等于dp[i] + dp[i-2],因为dp[i-2]是s[:i-2]的编码数,
+##由于现在的两位数可以编码,所以在dp[i-2]的基础上加上dp[i]

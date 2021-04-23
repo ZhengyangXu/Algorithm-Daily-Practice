@@ -47,5 +47,63 @@
 # @lc code=start
 class Solution:
     def candy(self, ratings: List[int]) -> int:
+        if not ratings:
+            return 0
+        n = len(ratings)
+        ret = 1 
+        pre,inc,dec = 1,1,0
+        
+        for i in range(1,n):
+            if ratings[i] >= ratings[i-1]:
+                dec = 0 
+                pre = 1 if ratings[i-1] == ratings[i] else pre + 1
+                ret += pre 
+                inc = pre 
+                
+            else:
+                dec += 1 
+                if dec == inc:
+                    dec += 1 
+                ret += dec 
+                pre = 1 
+                
+        return ret 
+            
+        
 # @lc code=end
 
+    # def candy(self, ratings: List[int]) -> int:
+    #     n = len(ratings)
+    #     left = [0] * n 
+    #     for i in range(n):
+    #         if i > 0 and ratings[i] > ratings[i-1]:
+    #             left[i] = left[i-1] + 1 
+    #         else:
+    #             left[i] = 1
+                
+    #     right = ret = 0 
+    #     for i in range(n-1,-1,-1):
+    #         if i < n-1 and ratings[i] > ratings[i+1]:
+    #             right += 1
+    #         else:
+    #             right = 1 
+    #         ret += max(right,left[i])
+            
+    #     return ret 
+    
+    # def candy(self, ratings: List[int]) -> int:
+    #     if not ratings:
+    #         return 0
+    #     n = len(ratings)
+    #     candy = [1]*n 
+        
+    #     for i in range(1,n):
+    #         if ratings[i] > ratings[i-1]:
+    #             candy[i] = candy[i-1] + 1 
+                
+    #     for i in range(n-1,0,-1):
+    #         if ratings[i-1] > ratings[i]:
+    #             candy[i-1] = max(candy[i-1],candy[i]+1)
+        
+        
+    #     return sum(candy)

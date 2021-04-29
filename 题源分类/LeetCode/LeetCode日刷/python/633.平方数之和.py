@@ -60,5 +60,36 @@
 # @lc code=start
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:
+        if c == 0 or c == 1:
+            return True 
+        
+        for i in range(2,int(sqrt(c))):
+            if c % i == 0:
+                exp = 0 
+                while c % i == 0:
+                    c //= i 
+                    exp += 1 
+                if i % 4 == 3 and exp % 2 != 0:
+                    return False
+        return c % 4 != 3 
 # @lc code=end
 
+    # def judgeSquareSum(self, c: int) -> bool:
+    #     left,right = 0,int(sqrt(c)) 
+    #     while left <= right:
+    #        if left ** 2 + right ** 2 == c:
+    #            return True 
+    #        elif left ** 2 + right ** 2 > c:
+    #            right -= 1 
+    #        else:
+    #            left += 1
+    #     return False 
+    
+        # def judgeSquareSum(self, c: int) -> bool:
+        # if c == 0 or c == 1:
+        #     return True 
+        # for i in range(1,int(sqrt(c)+1)):
+        #     b = c - i * i 
+        #     if int(sqrt(b)) ** 2 == b:
+        #         return True  
+        # return False 

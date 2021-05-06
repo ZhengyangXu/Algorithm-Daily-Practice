@@ -13,3 +13,55 @@
 [0m2021.04.27 09:17:20 WARN  Build server is not auto-connectable.[0m
 [0m2021.04.27 09:17:20 WARN  no build tool detected in workspace 'E:\code\√ø»’“ªÀ¢'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 [0m2021.04.29 08:46:16 INFO  shutting down Metals[0m
+[0m2021.04.29 08:54:29 INFO  Started: Metals version 0.10.2 in workspace 'E:\code\√ø»’“ªÀ¢' for client vscode 1.55.2.[0m
+[0m2021.04.29 08:54:30 INFO  time: initialize in 0.57s[0m
+[0m2021.04.29 08:54:31 WARN  Build server is not auto-connectable.[0m
+[0m2021.04.29 08:54:31 WARN  no build tool detected in workspace 'E:\code\√ø»’“ªÀ¢'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.05.05 08:38:01 INFO  Started: Metals version 0.10.2 in workspace 'E:\code\√ø»’“ªÀ¢' for client vscode 1.55.2.[0m
+[0m2021.05.05 08:38:02 INFO  time: initialize in 1.42s[0m
+org.h2.message.DbException: Log file error: "E:/code/√ø»’“ªÀ¢/.metals/metals.trace.db", cause: "java.io.FileNotFoundException: E:\code\√ø»’“ªÀ¢\.metals\metals.trace.db (¥≈≈Ãø’º‰≤ª◊„°£)" [90034-200]
+org.h2.message.DbException: Log file error: "E:/code/√ø»’“ªÀ¢/.metals/metals.trace.db", cause: "java.io.FileNotFoundException: E:\code\√ø»’“ªÀ¢\.metals\metals.trace.db (¥≈≈Ãø’º‰≤ª◊„°£)" [90034-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.TraceSystem.logWritingError(TraceSystem.java:294)
+	at org.h2.message.TraceSystem.openWriter(TraceSystem.java:315)
+	at org.h2.message.TraceSystem.writeFile(TraceSystem.java:263)
+	at org.h2.message.TraceSystem.write(TraceSystem.java:247)
+	at org.h2.message.Trace.error(Trace.java:180)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1529)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.closeConnection(JdbcUtils.java:103)
+	at org.flywaydb.core.internal.database.base.Connection.close(Connection.java:115)
+	at org.flywaydb.core.internal.database.base.Database.close(Database.java:360)
+	at org.flywaydb.core.internal.util.IOUtils.close(IOUtils.java:37)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:583)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	... 40 more 

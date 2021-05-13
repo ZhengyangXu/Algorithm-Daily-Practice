@@ -11,3 +11,11 @@
 # 其他节点都删掉。
 # 进阶问题：如果链表节点数为N，想在时间复杂度为O（N）时完成原问题的要求，
 # 该怎么实现？【难度】原问题士 ★☆☆☆进阶问题校 ★★★☆
+
+class Node:
+    def __init__(self,val):
+        self.val = val 
+        self.next = None 
+
+def josepKill(head,m):
+    if head == null or 

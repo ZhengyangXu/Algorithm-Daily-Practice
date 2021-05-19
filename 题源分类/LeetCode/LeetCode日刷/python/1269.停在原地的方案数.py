@@ -65,7 +65,22 @@ class Solution:
     def numWays(self, steps: int, arrLen: int) -> int:
         mod = 10 ** 9 + 7 
         
-        dp 
+        maxcol = min(steps//2,arrLen-1)
+        dp = [0 for _ in range(maxcol+1)]
+        dp[0] = 1 
+        
+        for i in range(1,steps+1):
+            edge = min(maxcol,i)
+            dpnex = [0 for _ in range(maxcol+1)]
+            for j in range(edge+1):
+                dpnex[j] = dp[j]
+                if j - 1 >= 0:
+                    dpnex[j] = (dp[j-1]+dpnex[j]) % mod 
+                if j + 1 <= edge:
+                    dpnex[j] = (dp[j+1]+dpnex[j]) % mod
+                    
+            dp = dpnex 
+        return dp[0] 
         
         
 

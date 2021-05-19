@@ -68,17 +68,25 @@ class Solution:
     def isCousins(self, root: TreeNode, x: int, y: int) -> bool: ## 深度优先遍历 + 递归
         if not root:
             return False
-        parent ={}
-        depth = {}
-        def dfs(node,par):
-            if node:
-                depth[node.val] = 1 + depth[par] if par else 0 
-                parent[node.val] = par 
-                dfs(node.left,node.val)
-                dfs(node.right,node.val)
-        dfs(root,None)
-        return depth[x] == depth[y] and parent[x] != parent[y]
- 
+        dic = {}
+        def dfs(root,depth,target,parent):
+            if not root:
+                return 
+            
+            if root.val == target:
+                dic[root.val] = (depth,parent)
+                
+            dfs(root.left,depth+1,target,root.val)
+            dfs(root.right,depth+1,target,root.val)
+        dfs(root,0,x,None)
+        dfs(root,0,y,None)   
+        return dic[x][0] == dic[y][0] and dic[x][1] != dic[y][1]
+        
+        
+            
+            
+
+            
         
 # @lc code=end
 
@@ -134,3 +142,18 @@ class Solution:
         # lis = list(dic.values())
         # if lis[0][0] == lis[1][0] and lis[0][1] != lis[1][1]:
         #     return True
+        
+        
+    #  def isCousins(self, root: TreeNode, x: int, y: int) -> bool: ## 深度优先遍历 + 递归
+    #     if not root:
+    #         return False
+    #     parent ={}
+    #     depth = {}
+    #     def dfs(node,par):
+    #         if node:
+    #             depth[node.val] = 1 + depth[par] if par else 0 
+    #             parent[node.val] = par 
+    #             dfs(node.left,node.val)
+    #             dfs(node.right,node.val)
+    #     dfs(root,None)
+    #     return depth[x] == depth[y] and parent[x] != parent[y]

@@ -62,11 +62,24 @@
 # @lc code=start
 class Solution:
     def xorOperation(self, n: int, start: int) -> int:
-        res = start
-        for i in range(1,n):
-            num = start + 2 * i 
-            res ^=num 
-        return res 
+        def sumXor(x):
+            if x % 4 == 0:
+                return x 
+            if x % 4 == 1:
+                return 1 
+            if x % 4 == 2:
+                return x + 1 
+            return 0 
+        s = start >> 1 
+        e = n & start &  1 
+        ret = sumXor(s-1)^sumXor(s+n-1)
+        return ret << 1 | e
             
 # @lc code=end
 
+    # def xorOperation(self, n: int, start: int) -> int:
+    #     res = start
+    #     for i in range(1,n):
+    #         num = start + 2 * i 
+    #         res ^=num 
+    #     return res 

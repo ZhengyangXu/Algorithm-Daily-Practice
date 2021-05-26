@@ -61,29 +61,23 @@
 # @lc code=start
 class Solution:
     def reverseParentheses(self, s: str) -> str:
+        
+        if not s:
+            return
         stack = []
-        n = len(s)
-        pair = [0] * n
-
-        for i in range(n):
-            if s[i] == '(':
-                stack.append(i)
-            if s[i] == ')':
-                j = stack.pop()
-                pair[i] = j
-                pair[j] = i
-
-        index = 0
-        step = 1
-        res = []
-        while index < n:
-            if s[index] == '(' or s[index] == ')':
-                index = pair[index]
-                step = -step
+        temp = []
+        for c in s:
+            if c == '(':
+                if temp:
+                    stack.append(temp)
+                temp = []
+            elif c.isalnum():
+                temp.append(c)
             else:
-                res.append(s[index])
-            index += step
-        return ''.join(res)
+                temp = temp[::-1]
+                stack += temp 
+                
+                
 
 
 # @lc code=end

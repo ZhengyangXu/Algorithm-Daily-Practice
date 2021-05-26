@@ -65,17 +65,20 @@ class Solution:
         if not s:
             return
         stack = []
-        temp = []
+        temp = ''
         for c in s:
             if c == '(':
-                if temp:
-                    stack.append(temp)
-                temp = []
+                
+                stack.append(temp)
+                temp = ''
             elif c.isalnum():
-                temp.append(c)
+                temp += c 
             else:
-                temp = temp[::-1]
-                stack += temp 
+                
+                temp = stack.pop() + temp[::-1]
+
+                
+        return temp
                 
                 
 

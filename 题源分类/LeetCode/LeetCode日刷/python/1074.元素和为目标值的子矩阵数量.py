@@ -65,22 +65,44 @@ class Solution:
     def numSubmatrixSumTarget(self, matrix: List[List[int]], target: int) -> int:
         m, n = len(matrix), len(matrix[0])
         ans = 0
-        for i in range(1, n + 1):
-            presum = [0] * (m + 1)
-            for j in range(i, n + 1):
-                a = 0
-                d = {0:1}
-                for fixed in range(1, m + 1):
-                    presum[fixed] += matrix[fixed-1][j-1]
-                    a += presum[fixed]
-                    if a - target in d:
-                        ans += d[a - target]
-                    if a in d:
-                        d[a] += 1
-                    else:
-                        d[a] = 1
-        return ans
+        presum = [[0]*(n+1) for _ in range(m+1)]
+        
+        for i in range(1,m+1):
+            for j in range(1,n+1):
+                presum[i][j] = presum[i-1][j] + presum[i][j-1] - presum[i-1][j-1] + matrix[i-1][j-1]
+                
+        for top in range(1,m+1):
+            for bot in range(top,m+1):
+                cur = 0 
+                dic = Counter() 
+                for r in range(1,n+1):
+                    cur = presum[bot][r] - presum[top-1][r]
+                    if cur == target:
+                        ans += 1 
+                    if cur - target in dic:
+                        ans += dic[cur-target]
+                    dic[cur] += 1 
+        return ans 
+
 
             
 # @lc code=end
 
+    # def numSubmatrixSumTarget(self, matrix: List[List[int]], target: int) -> int:
+    #     m, n = len(matrix), len(matrix[0])
+    #     ans = 0
+    #     for i in range(1, n + 1):
+    #         presum = [0] * (m + 1)
+    #         for j in range(i, n + 1):
+    #             a = 0
+    #             d = {0:1}
+    #             for fixed in range(1, m + 1):
+    #                 presum[fixed] += matrix[fixed-1][j-1]
+    #                 a += presum[fixed]
+    #                 if a - target in d:
+    #                     ans += d[a - target]
+    #                 if a in d:
+    #                     d[a] += 1
+    #                 else:
+    #                     d[a] = 1
+    #     return ans

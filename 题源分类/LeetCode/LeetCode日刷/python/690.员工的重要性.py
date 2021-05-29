@@ -59,16 +59,16 @@ class Solution:
     def getImportance(self, employees: List['Employee'], id: int) -> int:
         if not employees or not id:
             return 0
-        
         workers = {employee.id: employee for employee in employees}
-
-        def dfs(id,res):
-            res += workers[id].importance
-            for id in workers[id].subordinates:
-                dfs(id,res)
-            return res
+        
+        def dfs(id,ans): 
+            ans = workers[id].importance 
+            
+            for sub in workers[id].subordinates:
+                ans += dfs(sub,ans) 
+                    
+            return ans 
         return dfs(id,0)
-    
 
 
 # @lc code=end
@@ -109,20 +109,42 @@ class Solution:
 #             stack.append(workers[sid])
 #     return res
 
+# def getImportance(self, employees: List['Employee'], id: int) -> int:
+#     if not employees or not id:
+#         return 0
+#     res = 0
+#     workers = {employee.id: employee for employee in employees}
+
+#     def dfs(id):
+#         if not id:
+#             return
+#         nonlocal res
+#         res += workers[id].importance
+#         for id in workers[id].subordinates:
+#             dfs(id)
+#         return res
+
+#     return dfs(id)
+
+
+
+
+
+
+
 
     # def getImportance(self, employees: List['Employee'], id: int) -> int:
     #     if not employees or not id:
     #         return 0
-    #     res = 0
     #     workers = {employee.id: employee for employee in employees}
 
-    #     def dfs(id):
+    #     def dfs(id, res):
     #         if not id:
     #             return
-    #         nonlocal res
-    #         res += workers[id].importance
+    #         res = workers[id].importance
     #         for id in workers[id].subordinates:
-    #             dfs(id)
+    #             res += dfs(id, res)
+
     #         return res
 
-    #     return dfs(id)
+    #     return dfs(id, 0)

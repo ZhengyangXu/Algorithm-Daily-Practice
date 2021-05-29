@@ -4,5 +4,8 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "python.formatting.provider": "yapf",
-    "markdown-preview-enhanced.imageFolderPath": "/.notebook/assets/images"
+    "markdown-preview-enhanced.imageFolderPath": "/.notebook/assets/images",
+    "files.watcherExclude": {
+        "**/target": true
+    }
 }

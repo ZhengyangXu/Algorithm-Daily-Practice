@@ -36,18 +36,6 @@
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
 
-        if not nums:
-            return 0
-        ans = 0
-        for i in range(len(nums)):
-            presum = 0
-            for j in range(i, -1, -1):
-                presum += nums[j]
-                if presum == k:
-                    ans += 1
-        return ans
-
-
 # @lc code=end
 
 # def subarraySum(self, nums: List[int], k: int) -> int:

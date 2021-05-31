@@ -65,24 +65,17 @@ class Solution:
     def numSubmatrixSumTarget(self, matrix: List[List[int]], target: int) -> int:
         m, n = len(matrix), len(matrix[0])
         ans = 0
-        presum = [[0]*(n+1) for _ in range(m+1)]
         
-        for i in range(1,m+1):
-            for j in range(1,n+1):
-                presum[i][j] = presum[i-1][j] + presum[i][j-1] - presum[i-1][j-1] + matrix[i-1][j-1]
-                
-        for top in range(1,m+1):
-            for bot in range(top,m+1):
-                cur = 0 
-                dic = Counter() 
-                for r in range(1,n+1):
-                    cur = presum[bot][r] - presum[top-1][r]
-                    if cur == target:
-                        ans += 1 
-                    if cur - target in dic:
-                        ans += dic[cur-target]
-                    dic[cur] += 1 
-        return ans 
+        def subK(nums,k):
+            mp = {0:1}
+            n = len(nums)
+            count = 0
+            pre = 0 
+            for i in range(n):
+                pre += nums[i] 
+                if pre - k in mp:
+                    count += mp[pre-k]
+                mp[pre] = mp[pre] + 1 if pre in mp else 1 
 
 
             
@@ -106,3 +99,25 @@ class Solution:
     #                 else:
     #                     d[a] = 1
     #     return ans
+    
+    # def numSubmatrixSumTarget(self, matrix: List[List[int]], target: int) -> int:
+    #     m, n = len(matrix), len(matrix[0])
+    #     ans = 0
+    #     presum = [[0]*(n+1) for _ in range(m+1)]
+        
+    #     for i in range(1,m+1):
+    #         for j in range(1,n+1):
+    #             presum[i][j] = presum[i-1][j] + presum[i][j-1] - presum[i-1][j-1] + matrix[i-1][j-1]
+                
+    #     for top in range(1,m+1):
+    #         for bot in range(top,m+1):
+    #             cur = 0 
+    #             dic = Counter() 
+    #             for r in range(1,n+1):
+    #                 cur = presum[bot][r] - presum[top-1][r]
+    #                 if cur == target:
+    #                     ans += 1 
+    #                 if cur - target in dic:
+    #                     ans += dic[cur-target]
+    #                 dic[cur] += 1 
+    #     return ans 

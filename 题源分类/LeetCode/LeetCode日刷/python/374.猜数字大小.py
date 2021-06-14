@@ -82,10 +82,8 @@ class Solution:
     def guessNumber(self, n: int) -> int:
         left, right = 1, n
         while left < right:
-            mid = left + (right - left) // 2
-            if guess(mid) == 0:
-                return mid
-            elif guess(mid) == -1:
+            mid = (right + left) >> 1
+            if guess(mid) <= 0:
                 right = mid
             else:
                 left = mid + 1

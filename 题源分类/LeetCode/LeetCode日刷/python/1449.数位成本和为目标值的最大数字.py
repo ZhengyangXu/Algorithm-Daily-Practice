@@ -106,25 +106,7 @@ class Solution:
 
         return "".join(ans)
 
-        def backtrack(cost, target, path):
-            if target == 0:
-                path = path[:]
-                ans = sorted(path, reverse=True)
-                res.append(int(''.join(ans)))
-
-            for i in range(1, len(cost) + 1):
-                if cost[i - 1] > target:
-                    continue
-                path.append(str(i))
-
-                backtrack(cost, target - cost[i - 1], path)
-
-                path.pop()
-
-        path = []
-        res = []
-        backtrack(cost, target, path)
-        return str(max(res)) if res else "0"
+    
 
         # @lc code=end
 

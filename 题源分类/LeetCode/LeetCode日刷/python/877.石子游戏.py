@@ -54,15 +54,18 @@ class Solution:
     def stoneGame(self, piles: List[int]) -> bool:
         #return True
         n = len(piles)
-        dp = [[0]*n]*n
+        
+        dp = [[0] * n for _ in range(n)]
         
         for i in range(n):
-            dp[i][i] = piles[i]
+            dp[i][i] = piles[i] 
+            
+        for i in range(n-2,-1,-1):
+            for j in range(i+1,n):
+                dp[i][j] = max(piles[i] - dp[i+1][j], piles[j] - dp[i][j-1])
         
-        for i in range(1,n):
-            for j in range(n-i):
-                dp[j][i+j] = max(piles[j] - dp[j+1][i+j],piles[i+j]-dp[j][i+j-1])
-        return dp[0][n-1]>0
+        return dp[0][n-1] > 0 
+
         
 # @lc code=end
 

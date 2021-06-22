@@ -18,6 +18,13 @@
 # 1 <= s 的长度 <= 8
 
 # 通过次数119,873提交次数208,267
+class Solution:
+    @lru_cache(None)
+    def permutation(self, s: str) -> List[str]:
+        if len(s) <= 1:
+            return [s]
+        return list(set(s[i] + perm for i in range(len(s)) for perm in self.permutation(s[:i] + s[i+1:])))
+
 
 
 def permutation2(s) :
@@ -66,7 +73,27 @@ def permutation(s):
     dfs(0)
     return res 
     
+def permutation3(s):
+    
+
+    if len(s) <= 1:
+        return [s]
+    res = []
+    n = len(s)
+    for i in range(n):
+        cur = s[i]
+        print("cur:{}".format(cur))
+        nex = permutation3(s[:i]+s[i+1:])
+        print("nex:{}".format(nex))
+        for item in nex:
+            print("item:{}".format(item))
+            res.append(cur+item)
+   
+
+    return res   
+    
 
 if __name__ == "__main__":
-    s = "aba"
+    s = "abc"
     print(permutation(s))
+    print(permutation3(s))

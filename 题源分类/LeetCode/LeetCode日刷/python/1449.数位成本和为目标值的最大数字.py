@@ -86,6 +86,40 @@
 
 class Solution:
     def largestNumber(self, cost: List[int], target: int) -> str:
+        
+        dp = [[float("-inf") for _ in range(target+1)] for _ in range(10)]
+        dp[0][0] = 0 
+        num = [[0]*(target+1) for _ in range(10)]
+        ans = []
+        for i,c in enumerate(cost):
+            for j in range(target+1):
+                if c > j:
+                    dp[i+1][j] = dp[i][j]
+                    num[i+1][j] = j 
+                else:
+                    if dp[i][j] > dp[i+1][j-c] + 1:
+                        dp[i+1][j] = dp[i][j] 
+                        num[i+1][j] = j 
+                    else:
+                        dp[i+1][j] = dp[i+1][j-c] + 1 
+                        num[i+1][j] = j - c 
+        if dp[9][target] < 0:
+            return "0"
+                        
+        i,j = 9,target
+        ans = [] 
+        while i > 0:
+            if j == num[i][j]:
+                i -= 1 
+            else:
+                ans.append(str(i))
+                j = num[i][j]
+        return "".join(ans)
+                
+        
+        
+        # @lc code=end
+    def largestNumber(self, cost: List[int], target: int) -> str:
         dp = [float("-inf")] * (target + 1)
         dp[0] = 0
 
@@ -105,27 +139,38 @@ class Solution:
                 j -= c
 
         return "".join(ans)
-
     
-
-        # @lc code=end
-
-        def backtrack(cost, target, path): ###c超时
-            if target == 0:
-                path = path[:]
-                ans = sorted(path, reverse=True)
-                res.append(int(''.join(ans)))
-
-            for i in range(1, len(cost) + 1):
-                if cost[i - 1] > target:
-                    continue
-                path.append(str(i))
-
-                backtrack(cost, target - cost[i - 1], path)
-
-                path.pop()
-
-        path = []
-        res = []
-        backtrack(cost, target, path)
-        return str(max(res)) if res else "0"
+    
+       def largestNumber(self, cost: List[int], target: int) -> str:
+        
+        n = len(cost) 
+        
+        dp = [[float("-inf") for _ in range(target+1)] for _ in range(n+1)]
+        dp[0][0] = 0 
+        num = [[0 for _ in range(target+1)] for _ in range(10)]
+        
+        for i,c in enumerate(cost):
+            for j in range(target+1):
+                if c > j:
+                    dp[i+1][j] = dp[i][j]
+                    num[i+1][j] = j 
+                else:
+                    if dp[i][j] > dp[i+1][j-c] + 1:
+                        dp[i+1][j] = dp[i][j]
+                        num[i+1][j] = j 
+                    else:
+                        dp[i+1][j] = dp[i+1][j-c] + 1 
+                        num[i+1][j] = j - c 
+        if dp[9][target] < 0:
+            return "0"
+        
+        ans = []
+        i,j = 9,target
+        while i > 0:
+            if j == num[i][j]:
+                i -= 1 
+            else:
+                ans.append(str(i))
+                j = num[i][j]
+                
+        return "".join(ans)

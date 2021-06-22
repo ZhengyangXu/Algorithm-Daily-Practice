@@ -55,39 +55,27 @@
 # @lc code=start
 class Solution:
     def maxLength(self, arr: List[str]) -> int: ##常规回溯
-        
         new_arr = [s for s in arr if len(s) == len(set(s))]
-        ans = 0
+        ans = 0 
+        
         def backtrack(new_arr,path):
-            nonlocal ans 
-            if len(new_arr) == 0 :
-                print("最终path:{}".format(path))
-                ans = max(ans,len(''.join(path)))
-                return 
-                
+            nonlocal ans
+            ans = max(ans,len("".join(path)))
+            
             for i in range(len(new_arr)):
-                print("初始path:{}".format(path))
+                cur = new_arr[i]
                 flag = True 
-                if path:
-                    print("判断path:{},arr[i]:{}".format(path,new_arr[i]))
-                    for ch in path:
-                        for ch2 in new_arr[i]:
-                            if ch2 in ch:
-                                flag = False   
-                        else:
-                            continue 
+                for char in cur:
+                    if char in "".join(path):
+                        flag = False 
                         break 
                 if flag:
                     path.append(new_arr[i])
-                    print("path append:{}".format(path))
                     backtrack(new_arr[i+1:],path)
-                    print("path continue:{}".format(path))
-                    path.pop() 
-                    print("path pop:{}".format(path))
+                    path.pop()
         backtrack(new_arr,[])
         return ans 
-                
- 
+
 
 
 # @lc code=end
@@ -119,8 +107,8 @@ class Solution:
         backtrack(0, 0)
 
         return ans
-    
-    
+
+
     def maxLength(self, arr: List[str]) -> int:
         ans = 0
         masks = [0]
@@ -142,4 +130,35 @@ class Solution:
                 if m & mask == 0:
                     masks.append(m | mask)
                     ans = max(ans, bin(masks[-1]).count("1"))
+        return ans
+
+    def maxLength(self, arr: List[str]) -> int:  ##常规回溯
+
+        new_arr = [s for s in arr if len(s) == len(set(s))]
+        ans = 0
+
+        def isValid(cur, path):
+            strs = "".join(path)
+            for char in cur:
+                if char in strs:
+                    return False
+            return True
+
+        def backtrack(new_arr, path):
+            nonlocal ans
+
+            print("最终path:{}".format(path))
+            ans = max(ans, len(''.join(path)))
+
+            for i in range(len(new_arr)):
+                print("初始path:{}".format(path))
+                if isValid(new_arr[i], path):
+                    path.append(new_arr[i])
+                    print("path append:{}".format(path))
+                    backtrack(new_arr[i + 1:], path)
+                    print("path continue:{}".format(path))
+                    path.pop()
+                    print("path pop:{}".format(path))
+
+        backtrack(new_arr, [])
         return ans

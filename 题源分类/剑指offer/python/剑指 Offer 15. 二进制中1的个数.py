@@ -38,3 +38,4 @@ def hammingWeight(n):
 
 if __name__ == "__main__":
     print(hammingWeight(3))
+    print(bin(3).count('1'))

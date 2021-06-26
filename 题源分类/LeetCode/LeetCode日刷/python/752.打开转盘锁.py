@@ -90,7 +90,7 @@ class Solution:
         if start in deadends:
             return -1 
         
-        def update(s):
+        def update(s,visited):
             nxt = []
             for i,c in enumerate(s):
                 nxt.append(s[:i]+str((int(c) + 1)%10) + s[i+1:])

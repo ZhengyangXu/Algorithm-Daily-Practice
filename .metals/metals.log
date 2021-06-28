@@ -141,3 +141,11 @@ org.h2.message.DbException: Log file error: "E:/code/√ø»’“ªÀ¢/.metals/metals.tra
 [0m2021.06.26 16:55:20 WARN  Build server is not auto-connectable.[0m
 [0m2021.06.26 16:55:20 WARN  no build tool detected in workspace 'E:\code\√ø»’“ªÀ¢'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 [0m2021.06.26 16:56:08 INFO  shutting down Metals[0m
+[0m2021.06.26 16:57:03 INFO  Started: Metals version 0.10.4 in workspace 'E:\code\√ø»’“ªÀ¢' for client Visual Studio Code 1.57.1.[0m
+[0m2021.06.26 16:57:04 INFO  time: initialize in 1.5s[0m
+[0m2021.06.26 16:57:05 WARN  Build server is not auto-connectable.[0m
+[0m2021.06.26 16:57:05 WARN  no build tool detected in workspace 'E:\code\√ø»’“ªÀ¢'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+¡˘‘¬ 26, 2021 5:01:06 œ¬ŒÁ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+–≈œ¢: Unsupported notification method: $/setTrace
+¡˘‘¬ 26, 2021 5:03:00 œ¬ŒÁ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+–≈œ¢: Unsupported notification method: $/setTrace

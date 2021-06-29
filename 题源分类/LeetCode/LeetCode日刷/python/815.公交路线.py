@@ -63,40 +63,39 @@ class Solution:
                               target: int) -> int:
         if source == target:
             return 0
-
+        
         stations = defaultdict(set)
-        for i, route in enumerate(routes):
-            for stop in route:
-                stations[stop].add(i)
-
-        routes = [set(route) for route in routes]
-
+        
+        for i,route in enumerate(routes):
+            for stop in route: 
+                stations[stop].add(i) 
+        routes = [set(x) for x in routes]
+        
         buses = set()
-        cost = 0
+        stops = {source}
         front = {source}
         back = {target}
-
-        stops = {source}
-
+        cost = 0
+        
         while front and back:
-            nex = set()
-
+            nexstops = set() 
+            
             for curstop in front:
-                if curstop in back:
-                    return cost
-
-                for bus in stations[curstop] - buses:
-                    for stop in routes[bus] - stops:
-                        buses.add(bus)
-                        stops.add(stop)
-                        nex.add(stop)
-            front = back
-            back = nex
-            cost += 1
-
-        return -1
-
-
+                for curbus in stations[curstop] - buses:
+                    for targetstop in back:
+                        if curbus in stations[targetstop]:
+                            return cost + 1 
+                    buses.add(curbus)
+                    
+                    for nexstop in routes[curbus] - stops:
+                        stops.add(nexstop)
+                        nexstops.add(nexstop)
+            front = back 
+            back = nexstops 
+            cost += 1 
+        return -1 
+                
+                    
 
 
 

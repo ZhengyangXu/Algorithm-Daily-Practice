@@ -51,31 +51,22 @@
 # @lc code=start
 class Solution:
     def findErrorNums(self, nums: List[int]) -> List[int]:
+        
+        nums.sort()
         n = len(nums)
-        xor = 0
-        for num in nums:
-            xor ^= num
+        temp = [0] * n 
+        for i in range(n):
+            if temp[nums[i]-1] == nums[i]:
+                repeate = nums[i]
+            if temp[i] != nums[i]:
+                temp[nums[i] - 1] = nums[i]
+            
+        for i in range(len(temp)):
+            if temp[i] == 0:
+                miss = i + 1 
+        return [repeate,miss]
+                
 
-    for i in range(1, n + 1):
-        xor ^= i
-
-    lowbit = xor & (-xor)
-    num1, num2 = 0, 0
-    for num in nums:
-        if num & lowbit == 0:
-            num1 ^= num
-        else:
-            num2 ^= num
-    for i in range(1, n + 1):
-        if i & lowbit == 0:
-            num1 ^= i
-        else:
-            num2 ^= i
-    for num in nums:
-        if num == num1:
-            return [num1, num2]
-
-    return [num2, num1]
 
     # @lc code=end
 
@@ -108,3 +99,38 @@ class Solution:
         if nums[n - 1] != n:
             errorNums[1] = n
         return errorNums
+
+    def findErrorNums(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        xor = 0
+        for num in nums:
+            xor ^= num
+
+        for i in range(1, n + 1):
+            xor ^= i
+
+        lowbit = xor & (-xor)
+        num1, num2 = 0, 0
+        for num in nums:
+            if num & lowbit == 0:
+                num1 ^= num
+            else:
+                num2 ^= num
+        for i in range(1, n + 1):
+            if i & lowbit == 0:
+                num1 ^= i
+            else:
+                num2 ^= i
+        for num in nums:
+            if num == num1:
+                return [num1, num2]
+
+        return [num2, num1]
+    
+    def findErrorNums(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        sums = n*(n+1)//2 
+        
+        sets = set(nums) 
+        
+        return [sum(nums)-sum(sets),sums-sum(sets)]

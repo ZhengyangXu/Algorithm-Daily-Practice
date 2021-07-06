@@ -75,66 +75,110 @@
 #
 #
 
+
 # @lc code=start
 class Solution:
     def countOfAtoms(self, formula: str) -> str:
-        # 倒着的时候， 记录map，乘的基数，迭代中的乘数，个数，个数的10进制位数，元素
-        cnts, multiply, muls, num, num_count, atom = defaultdict(int), 1, [], 0, 0, ""
-        for c in formula[::-1]:
-            if c == ')':
-                # 如果当前有统计的数字，乘的基数要叠加
-                if num:
-                    multiply *= num
-                    muls.append(num)
-                    num = num_count = 0
-                else:
-                    muls.append(1)
-            elif c == '(':
-                # 去除掉上一个乘数
-                multiply //= muls.pop()
-            elif str.isdigit(c):
-                num += int(c) * (10 ** num_count)
-                num_count += 1
-            elif str.islower(c):
-                atom += c
+        n = len(formula)
+        map = defaultdict(lambda: 1)
+        d = deque([])
+        i = idx = 0
+        while i < n:
+            c = formula[i]
+            if c == '(' or c == ')':
+                d.append(c)
+                i += 1
             else:
-                atom += c
-                # 注意我们在更新元素个数时，始终要考虑乘的基数
-                if num:
-                    cnts[atom[::-1]] += num * multiply
+                if str.isdigit(c):
+                    # 获取完整的数字，并解析出对应的数值
+                    j = i
+                    while j < n and str.isdigit(formula[j]):
+                        j += 1
+                    cnt = int(formula[i:j])
+                    i = j
+                    # 如果栈顶元素是 )，说明当前数值可以应用给「连续一段」的原子中
+                    if d and d[-1] == ')':
+                        tmp = []
+                        d.pop()
+                        while d and d[-1] != '(':
+                            cur = d.pop()
+                            map[cur] *= cnt
+                            tmp.append(cur)
+                        d.pop()
+
+                        for k in range(len(tmp) - 1, -1, -1):
+                            d.append(tmp[k])
+                    # 如果栈顶元素不是 )，说明当前数值只能应用给栈顶的原子
+                    else:
+                        cur = d.pop()
+                        map[cur] *= cnt
+                        d.append(cur)
                 else:
-                    cnts[atom[::-1]] += multiply
-                atom = ""
-                num = num_count = 0
-        return "".join(key if cnts[key] == 1 else key + str(cnts[key]) for key in sorted(cnts.keys()))
+                    # 获取完整的原子名
+                    j = i + 1
+                    while j < n and str.islower(formula[j]):
+                        j += 1
+                    cur = formula[i:j] + "_" + str(idx)
+                    idx += 1
+                    map[cur] = 1
+                    i = j
+                    d.append(cur)
+
+        #  将不同编号的相同原子进行合并
+        mm = defaultdict(int)
+        for key, cnt in map.items():
+            atom = key.split("_")[0]
+            mm[atom] += cnt
+
+        # 对mm中的key进行排序作为答案
+        ans = []
+        for key in sorted(mm.keys()):
+            if mm[key] > 1:
+                ans.append(key+str(mm[key]))
+            else:
+                ans.append(key)
+        return "".join(ans)
+
+        
+        
+
 
 
 # @lc code=end
 # 执行用时：36 ms, 在所有 Python3 提交中击败了90.12%的用户
 # 内存消耗：15.2 MB, 在所有 Python3 提交中击败了8.72%的用户
 import re
+
+
 class Solution:
-    pt=re.compile("([A-Z][a-z]*)|([()])|(\d+)")  # 用正则表达式将 formula 分为元素、左右括号和数字分为三类
+    pt = re.compile(
+        "([A-Z][a-z]*)|([()])|(\d+)")  # 用正则表达式将 formula 分为元素、左右括号和数字分为三类
+
     def countOfAtoms(self, formula: str) -> str:
-        formula=tuple(filter(bool,re.split(self.pt,formula)))   # 将 formula 按元素、左右括号和数字之间分隔为字符串数组
+        formula = tuple(filter(bool, re.split(
+            self.pt, formula)))  # 将 formula 按元素、左右括号和数字之间分隔为字符串数组
         # print(formula)
-        total=defaultdict(int)  # 统计所有原子个数的字典
-        stack=[1,]  # 用来递归括号的栈，先把整个式子当成是在一个括号内。其元素为"重复倍数"。
-        num=1       # 局部（当前括号内的）个数，因为不写个数就是1个，故初值为1。
+        total = defaultdict(int)  # 统计所有原子个数的字典
+        stack = [
+            1,
+        ]  # 用来递归括号的栈，先把整个式子当成是在一个括号内。其元素为"重复倍数"。
+        num = 1  # 局部（当前括号内的）个数，因为不写个数就是1个，故初值为1。
         for a in formula[::-1]:
-            if a.isdigit():    # a是数字：当左边是元素则num为局部原子个数；当左边是括号则num为该括号对的重复倍数。
-                num=int(a)
+            if a.isdigit():  # a是数字：当左边是元素则num为局部原子个数；当左边是括号则num为该括号对的重复倍数。
+                num = int(a)
             else:
-                mul=stack[-1]    # 取当前（括号内）的：重复倍数、统计字典。
-                if a.isalpha(): # a是元素符号：要加上 重复倍数×局部原子个数 个。
-                    total[a] += mul*num
-                elif ')'==a:    # 是右括号（注意是逆序遍历）入栈。则num是新括号内的重复倍数，则要和总的重复倍数相乘。
-                    stack.append(mul*num)
-                elif '('==a:    # 是左括号，将此对括号内的统计结果汇总到括号外。然后出栈。
-                    stack.pop() # cur_dict已经引用了，故pop不会导致统计结果丢失。
-                num=1   # ★易错！局部个数用了一次之后就要重置为1，如果是括号的重复倍数，则已经入栈记录了。
-        return ''.join(key+(str(val) if val>1 else '')              # 注意原子个数为1，则省略为''。最后用''作为分隔符连接所有字符串
-                       for key,val in sorted(total.items()))  # 要以元素字典序升序排序。
+                mul = stack[-1]  # 取当前（括号内）的：重复倍数、统计字典。
+                if a.isalpha():  # a是元素符号：要加上 重复倍数×局部原子个数 个。
+                    total[a] += mul * num
+                elif ')' == a:  # 是右括号（注意是逆序遍历）入栈。则num是新括号内的重复倍数，则要和总的重复倍数相乘。
+                    stack.append(mul * num)
+                elif '(' == a:  # 是左括号，将此对括号内的统计结果汇总到括号外。然后出栈。
+                    stack.pop()  # cur_dict已经引用了，故pop不会导致统计结果丢失。
+                num = 1  # ★易错！局部个数用了一次之后就要重置为1，如果是括号的重复倍数，则已经入栈记录了。
+        return ''.join(
+            key +
+            (str(val) if val > 1 else '')  # 注意原子个数为1，则省略为''。最后用''作为分隔符连接所有字符串
+            for key, val in sorted(total.items()))  # 要以元素字典序升序排序。
 
     def countOfAtoms(self, formula: str) -> str:
         ans = ""
@@ -190,3 +234,36 @@ class Solution:
         ans = "".join([x[0] + str(x[1]) if x[1] > 1 else x[0] for x in res])
 
         return ans
+
+    def countOfAtoms(self, formula: str) -> str:
+        # 倒着的时候， 记录map，乘的基数，迭代中的乘数，个数，个数的10进制位数，元素
+        cnts, multiply, muls, num, num_count, atom = defaultdict(
+            int), 1, [], 0, 0, ""
+        for c in formula[::-1]:
+            if c == ')':
+                # 如果当前有统计的数字，乘的基数要叠加
+                if num:
+                    multiply *= num
+                    muls.append(num)
+                    num = num_count = 0
+                else:
+                    muls.append(1)
+            elif c == '(':
+                # 去除掉上一个乘数
+                multiply //= muls.pop()
+            elif str.isdigit(c):
+                num += int(c) * (10**num_count)
+                num_count += 1
+            elif str.islower(c):
+                atom += c
+            else:
+                atom += c
+                # 注意我们在更新元素个数时，始终要考虑乘的基数
+                if num:
+                    cnts[atom[::-1]] += num * multiply
+                else:
+                    cnts[atom[::-1]] += multiply
+                atom = ""
+                num = num_count = 0
+        return "".join(key if cnts[key] == 1 else key + str(cnts[key])
+                       for key in sorted(cnts.keys()))

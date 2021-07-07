@@ -77,27 +77,24 @@
 
 # @lc code=start
 
-
-from sortedcontainers import SortedDict
-
-
 class Solution:
-    def displayTable(self, orders: List[List[str]]) -> List[List[str]]: 
-        ## 
-        tables,foods = set(),set() 
+    def displayTable(self, orders: List[List[str]]) -> List[List[str]]:
+        foods = set() 
+        menu = defaultdict(lambda: defaultdict(int))
+          
         for _,table,food in orders:
-            tables.add(table)
+            menu[table][food] += 1 
             foods.add(food)
-        foods = sorted(foods)
-        tables = sorted(tables,key=int)
-        res = [["Table"] + foods] + [[tables[i]] + ["0"] * len(foods) for i in range(len(tables))]
+        foods = sorted(list(foods)) 
+        ans = [['Table']+foods]
         
-        tables = {v:i for i,v in enumerate(tables,1)}
-        foods = {v:i for i,v in enumerate(foods,1)}
-        
-        for _,table,food in orders:
-            res[tables[table]][foods[food]] = str(int(res[tables[table]][foods[food]]) + 1) 
-        return res 
+        for table in sorted(menu.keys(),key=lambda x:int(x)):
+            row = [table]
+            for food in foods:
+                row.append(str(menu[table][food]))
+            ans.append(row)
+        return ans         
+ 
 # @lc code=end
 
 class Solution:
@@ -141,9 +138,9 @@ class Solution:
             foods.add(food)
             tables[number][food] += 1
         return [["Table"] + [food for food in foods]] + [[table] + [str(tables[table][food]) for food in foods] for table in sorted(tables.keys(), key=int)]
-    
-    
-    
+
+
+
     def displayTable(self, orders: List[List[str]]) -> List[List[str]]:  ## 超时
         obj = list(zip(*orders))
         tables = SortedDict({v:i for i,v in enumerate(sorted(map(int,set(obj[1]))),1)})
@@ -152,3 +149,27 @@ class Solution:
         for _, table, food in orders:
             res[tables[int(table)]][foods[food]] = str(int(res[tables[int(table)]][foods[food]]) + 1)
         return res
+
+
+class Solution:
+    def displayTable(self, orders: List[List[str]]) -> List[List[str]]:
+        ##
+        tables, foods = set(), set()
+        for _, table, food in orders:
+            tables.add(table)
+            foods.add(food)
+        foods = sorted(foods)
+        tables = sorted(tables, key=int)
+        res = [["Table"] + foods] + [[tables[i]] + ["0"] * len(foods)
+                                     for i in range(len(tables))]
+
+        tables = {v: i for i, v in enumerate(tables, 1)}
+        foods = {v: i for i, v in enumerate(foods, 1)}
+
+        for _, table, food in orders:
+            res[tables[table]][foods[food]] = str(
+                int(res[tables[table]][foods[food]]) + 1)
+        return res
+
+
+

@@ -48,18 +48,15 @@
 # @lc code=start
 class Solution:
     def hIndex(self, citations: List[int]) -> int:
-        if len(citations) == 1:
-            return citations[0] if citations[0] <= 1 else 1
-
-        l, r = 0, len(citations) - 1
         n = len(citations)
-        while l <= r:
+        l,r = 0,n-1 
+        while l < r:
             m = l + (r - l) // 2
             if citations[m] >= n - m:
-                r = m - 1
+                r = m 
             else:
-                l = m + 1
-        return n - l
+                l = m + 1 
+        return n - l if citations[l]  >= n - l else 0 
 
 
 # @lc code=end

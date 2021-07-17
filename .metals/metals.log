@@ -185,3 +185,4 @@ org.h2.message.DbException: Log file error: "E:/code/ц©хур╩к╒/.metals/metals.tra
 пео╒: Unsupported notification method: $/setTrace
 фътб 12, 2021 5:38:03 обнГ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 пео╒: Unsupported notification method: $/setTrace
+[0m2021.07.12 21:15:05 INFO  shutting down Metals[0m

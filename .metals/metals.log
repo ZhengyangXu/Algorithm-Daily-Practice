@@ -186,3 +186,11 @@ org.h2.message.DbException: Log file error: "E:/code/√ø»’“ªÀ¢/.metals/metals.tra
 ∆ﬂ‘¬ 12, 2021 5:38:03 œ¬ŒÁ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 –≈œ¢: Unsupported notification method: $/setTrace
 [0m2021.07.12 21:15:05 INFO  shutting down Metals[0m
+[0m2021.07.16 09:38:58 INFO  Started: Metals version 0.10.4 in workspace 'E:\code\√ø»’“ªÀ¢' for client Visual Studio Code 1.58.0.[0m
+[0m2021.07.16 09:39:00 INFO  time: initialize in 2.17s[0m
+[0m2021.07.16 09:39:00 WARN  Build server is not auto-connectable.[0m
+[0m2021.07.16 09:39:00 WARN  no build tool detected in workspace 'E:\code\√ø»’“ªÀ¢'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+∆ﬂ‘¬ 16, 2021 5:42:47 œ¬ŒÁ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+–≈œ¢: Unsupported notification method: $/setTrace
+∆ﬂ‘¬ 16, 2021 5:42:47 œ¬ŒÁ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+–≈œ¢: Unsupported notification method: $/setTrace

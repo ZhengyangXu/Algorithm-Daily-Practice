@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b9faf859-dbee-4d3d-9480-e04e08bef6aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metals/metals.h2.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metals/metals.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.lock.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metals/metals.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/每日刷题/python/2020_01_14.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_108.将有序数组转换为二叉搜索树.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_109.有序链表转换二叉搜索树.py" beforeDir="false" />
@@ -72,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609218850872</updated>
-      <workItem from="1649751678224" duration="2766000" />
+      <workItem from="1649751678224" duration="3259000" />
     </task>
     <servers />
   </component>

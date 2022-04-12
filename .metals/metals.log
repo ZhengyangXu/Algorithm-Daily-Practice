@@ -207,3 +207,885 @@ org.h2.message.DbException: Log file error: "E:/code/Ã¿ÈÕÒ»Ë¢/.metals/metals.tra
 [0m2021.07.28 20:48:23 WARN  Build server is not auto-connectable.[0m
 [0m2021.07.28 20:48:23 WARN  no build tool detected in workspace 'E:\code\Ã¿ÈÕÒ»Ë¢'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 [0m2021.07.30 12:02:47 INFO  shutting down Metals[0m
+2022.04.12 17:08:13 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\.metals\lsp.trace.json or C:\Users\Administrator\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.04.12 17:08:15 INFO  logging to file D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\.metals\metals.log
+2022.04.12 17:08:15 INFO  Started: Metals version 0.11.2 in workspace 'D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise' for client Visual Studio Code 1.66.1.
+2022.04.12 17:08:15 INFO  Parse release: 1.8.0_311
+2022.04.12 17:08:16 INFO  time: initialize in 0.8s
+2022.04.12 17:08:16 INFO  Deleting old database format D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\.metals\metals.h2.db
+2022.04.12 17:08:20 WARN  Build server is not auto-connectable.
+2022.04.12 17:08:20 WARN  no build tool detected in workspace 'D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.04.12 17:08:20 WARN  no build target for: D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java
+2022.04.12 17:08:20 WARN  no build target for: D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.scala
+2022.04.12 17:08:22 INFO  no build target found for D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.scala. Using presentation compiler with project's scala-library version: 3.1.1
+2022.04.12 17:08:23 INFO  time: code lens generation in 2.2s
+2022.04.12 17:08:23 WARN  Running javac-semanticdb failed for file:///D:/Ñ§Ï°ÎÄµµ/coding/algoritm-exercise/Ã¿ÈÕË¢Ìâ/2022/04/12/1.Á½ÊıÖ®ºÍ.java. Output:
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+               ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                 ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                  ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                                                 ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                                                                                       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                                                                                        ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:21: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                             ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:21: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                                          ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:21: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                                                               ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:21: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                                                                ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:23: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥æŒ‰ä»»æ„é¡ºåºè¿”å›ç­”æ¡ˆã€?
+                      ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:27: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç¤ºä¾‹ 1ï¼?
+         ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:32: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è§£é‡Šï¼šå› ä¸? nums[0] + nums[1] == 9 ï¼Œè¿”å›? [0, 1] ã€?
+          ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:32: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è§£é‡Šï¼šå› ä¸? nums[0] + nums[1] == 9 ï¼Œè¿”å›? [0, 1] ã€?
+                                       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:32: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è§£é‡Šï¼šå› ä¸? nums[0] + nums[1] == 9 ï¼Œè¿”å›? [0, 1] ã€?
+                                                 ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:35: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç¤ºä¾‹ 2ï¼?
+         ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:42: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç¤ºä¾‹ 3ï¼?
+         ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:51: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * æç¤ºï¼?
+       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:57: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * åªä¼šå­˜åœ¨ä¸?ä¸ªæœ‰æ•ˆç­”æ¡?
+          ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:57: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * åªä¼šå­˜åœ¨ä¸?ä¸ªæœ‰æ•ˆç­”æ¡?
+                  ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:60: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è¿›é˜¶ï¼šä½ å¯ä»¥æƒ³å‡ºä¸?ä¸ªæ—¶é—´å¤æ‚åº¦å°äº O(n^2) çš„ç®—æ³•å—ï¼?
+                ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\1.Á½ÊıÖ®ºÍ.java:60: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è¿›é˜¶ï¼šä½ å¯ä»¥æƒ³å‡ºä¸?ä¸ªæ—¶é—´å¤æ‚åº¦å°äº O(n^2) çš„ç®—æ³•å—ï¼?
+                                            ^
+23 ¸ö´íÎó
+ËÄÔÂ 12, 2022 5:14:47 ÏÂÎç org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ĞÅÏ¢: Unsupported notification method: $/setTrace
+Exception in thread "pool-3-thread-1" java.util.NoSuchElementException: next on empty iterator
+	at scala.collection.Iterator$$anon$19.next(Iterator.scala:966)
+	at scala.collection.Iterator$$anon$19.next(Iterator.scala:964)
+	at scala.collection.mutable.MutationTracker$CheckedIterator.next(MutationTracker.scala:76)
+	at scala.collection.IterableOps.head(Iterable.scala:222)
+	at scala.collection.IterableOps.head$(Iterable.scala:222)
+	at scala.collection.AbstractIterable.head(Iterable.scala:926)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:165)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:35)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:197)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ËÄÔÂ 12, 2022 5:16:26 ÏÂÎç org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ĞÅÏ¢: Unsupported notification method: $/setTrace
+2022.04.12 17:23:35 WARN  no build target for: D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java
+2022.04.12 17:23:35 WARN  Running javac-semanticdb failed for file:///D:/Ñ§Ï°ÎÄµµ/coding/algoritm-exercise/Ã¿ÈÕË¢Ìâ/2022/04/12/java/1.Á½ÊıÖ®ºÍ.java. Output:
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+               ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                 ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                  ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                                                 ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                                                                                       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:19: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                                                                                        ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:21: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                             ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:21: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                                          ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:21: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                                                               ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:21: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                                                                ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:23: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥æŒ‰ä»»æ„é¡ºåºè¿”å›ç­”æ¡ˆã€?
+                      ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:27: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç¤ºä¾‹ 1ï¼?
+         ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:32: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è§£é‡Šï¼šå› ä¸? nums[0] + nums[1] == 9 ï¼Œè¿”å›? [0, 1] ã€?
+          ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:32: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è§£é‡Šï¼šå› ä¸? nums[0] + nums[1] == 9 ï¼Œè¿”å›? [0, 1] ã€?
+                                       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:32: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è§£é‡Šï¼šå› ä¸? nums[0] + nums[1] == 9 ï¼Œè¿”å›? [0, 1] ã€?
+                                                 ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:35: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç¤ºä¾‹ 2ï¼?
+         ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:42: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç¤ºä¾‹ 3ï¼?
+         ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:51: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * æç¤ºï¼?
+       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:57: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * åªä¼šå­˜åœ¨ä¸?ä¸ªæœ‰æ•ˆç­”æ¡?
+          ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:57: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * åªä¼šå­˜åœ¨ä¸?ä¸ªæœ‰æ•ˆç­”æ¡?
+                  ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:60: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è¿›é˜¶ï¼šä½ å¯ä»¥æƒ³å‡ºä¸?ä¸ªæ—¶é—´å¤æ‚åº¦å°äº O(n^2) çš„ç®—æ³•å—ï¼?
+                ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:60: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è¿›é˜¶ï¼šä½ å¯ä»¥æƒ³å‡ºä¸?ä¸ªæ—¶é—´å¤æ‚åº¦å°äº O(n^2) çš„ç®—æ³•å—ï¼?
+                                            ^
+23 ¸ö´íÎó
+ËÄÔÂ 12, 2022 5:23:43 ÏÂÎç org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ĞÅÏ¢: Unsupported notification method: $/setTrace
+2022.04.12 17:24:49 WARN  no build target for: D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java
+2022.04.12 17:24:49 WARN  Running javac-semanticdb failed for file:///D:/Ñ§Ï°ÎÄµµ/coding/algoritm-exercise/Ã¿ÈÕË¢Ìâ/2022/04/12/java/1.Á½ÊıÖ®ºÍ.java. Output:
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:20: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:20: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+               ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:20: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                 ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:20: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                  ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:20: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                                                 ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:20: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                                                                                       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:20: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç»™å®šä¸?ä¸ªæ•´æ•°æ•°ç»? numsÂ å’Œä¸€ä¸ªæ•´æ•°ç›®æ ‡å?? targetï¼Œè¯·ä½ åœ¨è¯¥æ•°ç»„ä¸­æ‰¾å‡º å’Œä¸ºç›®æ ‡å€? targetÂ  çš„é‚£Â ä¸¤ä¸ªÂ æ•´æ•°ï¼Œå¹¶è¿”å›å®ƒä»¬çš„æ•°ç»„ä¸‹æ ‡ã??
+                                                                                                        ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:22: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                             ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:22: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                                          ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:22: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                                                               ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:22: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥å‡è®¾æ¯ç§è¾“å…¥åªä¼šå¯¹åº”ä¸€ä¸ªç­”æ¡ˆã?‚ä½†æ˜¯ï¼Œæ•°ç»„ä¸­åŒä¸?ä¸ªå…ƒç´ åœ¨ç­”æ¡ˆé‡Œä¸èƒ½é‡å¤å‡ºç°ã??
+                                                                ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:24: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ä½ å¯ä»¥æŒ‰ä»»æ„é¡ºåºè¿”å›ç­”æ¡ˆã€?
+                      ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:28: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç¤ºä¾‹ 1ï¼?
+         ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:33: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è§£é‡Šï¼šå› ä¸? nums[0] + nums[1] == 9 ï¼Œè¿”å›? [0, 1] ã€?
+          ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:33: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è§£é‡Šï¼šå› ä¸? nums[0] + nums[1] == 9 ï¼Œè¿”å›? [0, 1] ã€?
+                                       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:33: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è§£é‡Šï¼šå› ä¸? nums[0] + nums[1] == 9 ï¼Œè¿”å›? [0, 1] ã€?
+                                                 ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:36: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç¤ºä¾‹ 2ï¼?
+         ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:43: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * ç¤ºä¾‹ 3ï¼?
+         ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:52: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * æç¤ºï¼?
+       ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:58: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * åªä¼šå­˜åœ¨ä¸?ä¸ªæœ‰æ•ˆç­”æ¡?
+          ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:58: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * åªä¼šå­˜åœ¨ä¸?ä¸ªæœ‰æ•ˆç­”æ¡?
+                  ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:61: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è¿›é˜¶ï¼šä½ å¯ä»¥æƒ³å‡ºä¸?ä¸ªæ—¶é—´å¤æ‚åº¦å°äº O(n^2) çš„ç®—æ³•å—ï¼?
+                ^
+D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\Ã¿ÈÕË¢Ìâ\2022\04\12\java\1.Á½ÊıÖ®ºÍ.java:61: ´íÎó: ±àÂëGBKµÄ²»¿ÉÓ³Éä×Ö·û
+ * è¿›é˜¶ï¼šä½ å¯ä»¥æƒ³å‡ºä¸?ä¸ªæ—¶é—´å¤æ‚åº¦å°äº O(n^2) çš„ç®—æ³•å—ï¼?
+                                            ^
+23 ¸ö´íÎó
+2022.04.12 17:28:56 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\.metals\lsp.trace.json or C:\Users\Administrator\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.04.12 17:28:58 INFO  logging to file D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise\.metals\metals.log
+2022.04.12 17:28:58 INFO  Started: Metals version 0.11.2 in workspace 'D:\Ñ§Ï°ÎÄµµ\coding\algoritm-exercise' for client Visual Studio Code 1.66.1.
+2022.04.12 17:28:58 INFO  Parse release: 1.8.0_311
+2022.04.12 17:28:59 INFO  time: initialize in 0.86s
+ËÄÔÂ 12, 2022 5:28:59 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:975)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:119)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:384)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.read(MessageTypeAdapter.java:92)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.read(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.fromJson(Gson.java:963)
+	... 10 more
+
+ËÄÔÂ 12, 2022 5:29:46 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "nrpc":"2.0","method":"initialized","params":{}}{"jsonrpc":"2.0","method":"workspace/didChangeConfiguration","params":{"settings":{"metals":{"serverVersion":"0.11.2","serverProperties":["-Xmx1G"],"coursierMirror":"","ammoniteJvmProperties":[],"excludedPackages":[],"showInferredType":false,"showImplicitArguments":false,"showImplicitConversionsAndClasses":false,"javaHome":"","sbtScript":"","millScript":"","mavenScript":"","gradleScript":"","scalafmtConfigPath":"","scalafixConfigPath":"","bloopVersion":"","bloopSbtAlreadyInstalled":false,"customRepositories":[],"superMethodLensesEnabled":true,"enableStripMarginOnTypeFormatting":true,"enableIndentOnPaste":false,"testUserInterface":"Test Explorer","fallbackScalaVersion":"automatic","javaFormat":{"eclipseConfigPath":"","eclipseProfile":""},"suggestLatestUpgrade":false}}}}{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///d%3A/%E5%AD%A6%E4%B9%A0%E6%96%87%E6%A1%A3/coding/algoritm-exercise/%E6%AF%8F%E6%97%A5%E5%88%B7%E9%A2%98/2022/04/12/java/1.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.java","languageId":"java","version":1,"text":"package java;\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\n\r\n/*\r\n * @lc app=leetcode.cn id=1 lang=java\r\n *\r\n * [1] ??¡è??¡ã??????\r\n *\r\n * https://leetcode-cn.com/problems/two-sum/description/\r\n *\r\n * algorithms\r\n * Easy (52.43%)\r\n * Likes:    14128\r\n * Dislikes: 0\r\n * Total Accepted:    3.3M\r\n * Total Submissions: 6.2M\r\n * Testcase Example:  '[2,7,11,15]\\n9'\r\n *\r\n * ?????????????????¡ã??¡ã??? nums????????????????¡ã????????? target???¨¨?¡¤?????¡§¨¨????¡ã???????????? ??????????????? target?? ???¨¦??????¡è??????????¡ã??????¨¨????????????????¡ã????????????\r\n * \r\n * ????????????¨¨??????¡ì?¨¨???????????????????????????????????????????¡ã???????????????????????¡§??????¨¦?????¨¨??¨¦???¡è??????¡ã???\r\n * \r\n * ??????????????????¨¦?????¨¨??????????????\r\n * \r\n * \r\n * \r\n * ?¡è???? 1???\r\n * \r\n * \r\n * ¨¨????????nums = [2,7,11,15], target = 9\r\n * ¨¨????????[0,1]\r\n * ¨¨¡ì?¨¦??????????? nums[0] + nums[1] == 9 ???¨¨????? [0, 1] ???\r\n * \r\n * \r\n * ?¡è???? 2???\r\n * \r\n * \r\n * ¨¨????????nums = [3,2,4], target = 6\r\n * ¨¨????????[1,2]\r\n * \r\n * \r\n * ?¡è???? 3???\r\n * \r\n * \r\n * ¨¨????????nums = [3,3], target = 6\r\n * ¨¨????????[0,1]\r\n * \r\n * \r\n * \r\n * \r\n * ????¡è????\r\n * \r\n * \r\n * 2 <= nums.length <= 10^4\r\n * -10^9 <= nums[i] <= 10^9\r\n * -10^9 <= target <= 10^9\r\n * ???????????¡§??????????????????\r\n * \r\n * \r\n * ¨¨??¨¦?????????????????????????????¨¦???¡è????????¡ã???? O(n^2) ???????????????\r\n * \r\n */\r\n\r\n// @lc code=start\r\nclass Solution {\r\n    public int[] twoSum(int[] nums, int target) {\r\n\r\n        Map<Integer, Integer> table = new HashMap<Integer, Integer>();\r\n\r\n        for (int i = 0; i < nums.length; i++) {\r\n            if (table.containsKey(target - nums[i])) {\r\n                int[] result = { table.get(target - nums[i]), i };\r\n                return result;\r\n            }\r\n            table.put(nums[i], i);\r\n        }\r\n        return null;\r\n\r\n    }\r\n}\r\n// @lc code=end\r\n"}}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "nrpc":"2.0","method":"initialized","params":{}}{"jsonrpc":"2.0","method":"workspace/didChangeConfiguration","params":{"settings":{"metals":{"serverVersion":"0.11.2","serverProperties":["-Xmx1G"],"coursierMirror":"","ammoniteJvmProperties":[],"excludedPackages":[],"showInferredType":false,"showImplicitArguments":false,"showImplicitConversionsAndClasses":false,"javaHome":"","sbtScript":"","millScript":"","mavenScript":"","gradleScript":"","scalafmtConfigPath":"","scalafixConfigPath":"","bloopVersion":"","bloopSbtAlreadyInstalled":false,"customRepositories":[],"superMethodLensesEnabled":true,"enableStripMarginOnTypeFormatting":true,"enableIndentOnPaste":false,"testUserInterface":"Test Explorer","fallbackScalaVersion":"automatic","javaFormat":{"eclipseConfigPath":"","eclipseProfile":""},"suggestLatestUpgrade":false}}}}{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///d%3A/%E5%AD%A6%E4%B9%A0%E6%96%87%E6%A1%A3/coding/algoritm-exercise/%E6%AF%8F%E6%97%A5%E5%88%B7%E9%A2%98/2022/04/12/java/1.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.java","languageId":"java","version":1,"text":"package java;\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\n\r\n/*\r\n * @lc app=leetcode.cn id=1 lang=java\r\n *\r\n * [1] ??¡è??¡ã??????\r\n *\r\n * https://leetcode-cn.com/problems/two-sum/description/\r\n *\r\n * algorithms\r\n * Easy (52.43%)\r\n * Likes:    14128\r\n * Dislikes: 0\r\n * Total Accepted:    3.3M\r\n * Total Submissions: 6.2M\r\n * Testcase Example:  '[2,7,11,15]\\n9'\r\n *\r\n * ?????????????????¡ã??¡ã??? nums????????????????¡ã????????? target???¨¨?¡¤?????¡§¨¨????¡ã???????????? ??????????????? target?? ???¨¦??????¡è??????????¡ã??????¨¨????????????????¡ã????????????\r\n * \r\n * ????????????¨¨??????¡ì?¨¨???????????????????????????????????????????¡ã???????????????????????¡§??????¨¦?????¨¨??¨¦???¡è??????¡ã???\r\n * \r\n * ??????????????????¨¦?????¨¨??????????????\r\n * \r\n * \r\n * \r\n * ?¡è???? 1???\r\n * \r\n * \r\n * ¨¨????????nums = [2,7,11,15], target = 9\r\n * ¨¨????????[0,1]\r\n * ¨¨¡ì?¨¦??????????? nums[0] + nums[1] == 9 ???¨¨????? [0, 1] ???\r\n * \r\n * \r\n * ?¡è???? 2???\r\n * \r\n * \r\n * ¨¨????????nums = [3,2,4], target = 6\r\n * ¨¨????????[1,2]\r\n * \r\n * \r\n * ?¡è???? 3???\r\n * \r\n * \r\n * ¨¨????????nums = [3,3], target = 6\r\n * ¨¨????????[0,1]\r\n * \r\n * \r\n * \r\n * \r\n * ????¡è????\r\n * \r\n * \r\n * 2 <= nums.length <= 10^4\r\n * -10^9 <= nums[i] <= 10^9\r\n * -10^9 <= target <= 10^9\r\n * ???????????¡§??????????????????\r\n * \r\n * \r\n * ¨¨??¨¦?????????????????????????????¨¦???¡è????????¡ã???? O(n^2) ???????????????\r\n * \r\n */\r\n\r\n// @lc code=start\r\nclass Solution {\r\n    public int[] twoSum(int[] nums, int target) {\r\n\r\n        Map<Integer, Integer> table = new HashMap<Integer, Integer>();\r\n\r\n        for (int i = 0; i < nums.length; i++) {\r\n            if (table.containsKey(target - nums[i])) {\r\n                int[] result = { table.get(target - nums[i]), i };\r\n                return result;\r\n            }\r\n            table.put(nums[i], i);\r\n        }\r\n        return null;\r\n\r\n    }\r\n}\r\n// @lc code=end\r\n"}}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:29:47 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:04 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:04 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:25 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:25 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:32 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:32 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:36 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:36 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:59 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:31:59 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:32:07 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:32:14 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:32:48 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:32:50 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:32:56 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:33:08 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:33:37 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:33:40 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:33:41 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:33:41 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:27 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:27 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:29 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:29 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:42 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:42 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:44 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:44 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:49 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:49 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:58 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:34:59 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:35:14 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:35:17 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:35:17 ÏÂÎç org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+ÑÏÖØ: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ËÄÔÂ 12, 2022 5:35:17 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+¾¯¸æ: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1562)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1403)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:541)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:424)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+

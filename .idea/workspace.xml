@@ -3,43 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9faf859-dbee-4d3d-9480-e04e08bef6aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metals/metals.h2.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metals/metals.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.lock.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metals/metals.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/2020_01_14.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_108.将有序数组转换为二叉搜索树.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_109.有序链表转换二叉搜索树.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_133.克隆图_BFS+DFS.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_138.复制带随即指针的链表.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_19.删除链表的倒数第n个节点.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_2.两数相加.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_207.课程表.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_21.合并两个有序链表.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_210.课程表2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_23.合并k个升序链表.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_24.两两交换链表中的节点.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_25.k个一组翻转链表.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_55.跳跃游戏.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_56.合并区间_其它.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_57.插入区间_其它.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_60.排列序列.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_60.排列序列2刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_60.排列序列_3刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_60.排列序列_4刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_61.旋转链表_linked_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_82.删除排序链表中的重复元素-ii_linked_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_83.删除排序链表中的重复元素_linked_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/leetcode_92.反转链表-ii.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/剑指offer_3.二维数组中的查找_2刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/剑指offer_3.二维数组中的查找_3刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/剑指offer_8.旋转数组的最小数字.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/归并排序_2刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/归并排序_3刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/归并排序_4刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/程序员面试代码指南_1_getMin功能的栈.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/程序员面试代码指南_如何仅用递归函数和栈操作拟于一个栈_4刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/程序员面试代码指南_如何仅用递归函数和栈操作逆序一个栈_3刷.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/每日刷题/python/程序员面试代码指南_如何归函数和栈操作逆序一个栈.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../code-practice/Scala" />
     <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,6 +39,8 @@
       <option name="presentableId" value="Default" />
       <updated>1609218850872</updated>
       <workItem from="1649751678224" duration="3259000" />
+      <workItem from="1649764703095" duration="588000" />
+      <workItem from="1649766883207" duration="14000" />
     </task>
     <servers />
   </component>

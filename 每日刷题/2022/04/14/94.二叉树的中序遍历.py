@@ -66,16 +66,16 @@ class Solution:
         if not root:
             return []
         res = []
-        stack = [root]
+        stack = []
 
         while root or stack:
-            while root.left:
-                root = root.left
+            if root:
                 stack.append(root)
-
-            root = stack.pop()
-            res.append(root.val)
-            root = root.right
+                root = root.left
+            else:
+                root = stack.pop()
+                res.append(root.val)
+                root = root.right
         return res
 
 

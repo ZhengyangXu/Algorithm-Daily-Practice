@@ -1089,3 +1089,73 @@ com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) t
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
+2022.04.14 18:47:17 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at e:\学习文档\coding\算法刷题\.metals\lsp.trace.json or C:\Users\Administrator\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.04.14 18:47:19 INFO  logging to file E:\学习文档\coding\算法刷题\.metals\metals.log
+2022.04.14 18:47:19 INFO  Started: Metals version 0.11.2 in workspace 'E:\学习文档\coding\算法刷题' for client Visual Studio Code 1.66.2.
+2022.04.14 18:47:19 INFO  Parse release: 1.8.0_311
+2022.04.14 18:47:20 INFO  time: initialize in 0.85s
+2022.04.14 18:47:24 WARN  Build server is not auto-connectable.
+2022.04.14 18:47:24 WARN  no build tool detected in workspace 'E:\学习文档\coding\算法刷题'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.04.14 18:47:25 WARN  no build target for: E:\学习文档\coding\算法刷题\每日刷题\2022\04\13\1672.最富有客户的资产总量.scala
+2022.04.14 18:47:28 INFO  no build target found for E:\学习文档\coding\算法刷题\每日刷题\2022\04\13\1672.最富有客户的资产总量.scala. Using presentation compiler with project's scala-library version: 3.1.1
+2022.04.14 18:47:29 INFO  time: code lens generation in 4.42s
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/3.4.0/scalafmt-core_2.12-3.4.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/3.4.0/scalafmt-core_2.12-3.4.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.12/3.4.0/scalafmt-config_2.12-3.4.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.4.33/scalameta_2.12-4.4.33.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.12/3.4.0/scalafmt-sysops_2.12-3.4.0.pom
+2022.04.14 18:49:38 WARN  no build target for: E:\学习文档\coding\算法刷题\每日刷题\2022\04\13\1672.最富有客户的资产总量.scala
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.12/3.4.0/scalafmt-config_2.12-3.4.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.12/3.4.0/scalafmt-sysops_2.12-3.4.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.4.33/scalameta_2.12-4.4.33.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.9.15/metaconfig-typesafe-config_2.12-0.9.15.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.9.15/metaconfig-core_2.12-0.9.15.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.4.33/parsers_2.12-4.4.33.pom
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.9.15/metaconfig-typesafe-config_2.12-0.9.15.pom
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.9.15/metaconfig-core_2.12-0.9.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.4.33/parsers_2.12-4.4.33.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.6.6/pprint_2.12-0.6.6.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.4.33/trees_2.12-4.4.33.pom
+Downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.5.0/scala-collection-compat_2.12-2.5.0.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.6.6/pprint_2.12-0.6.6.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.4.33/trees_2.12-4.4.33.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.5.0/scala-collection-compat_2.12-2.5.0.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.2.7/sourcecode_2.12-0.2.7.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.4.33/common_2.12-4.4.33.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.14/fansi_2.12-0.2.14.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.2.7/sourcecode_2.12-0.2.7.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.14/fansi_2.12-0.2.14.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.4.33/common_2.12-4.4.33.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/geny_2.12/0.6.5/geny_2.12-0.6.5.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/geny_2.12/0.6.5/geny_2.12-0.6.5.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.4.33/parsers_2.12-4.4.33.jar
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.9.15/metaconfig-typesafe-config_2.12-0.9.15.jar
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.2.7/sourcecode_2.12-0.2.7.jar
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.9.15/metaconfig-core_2.12-0.9.15.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.4.33/trees_2.12-4.4.33.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.4.33/common_2.12-4.4.33.jar
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.9.15/metaconfig-typesafe-config_2.12-0.9.15.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/3.4.0/scalafmt-core_2.12-3.4.0.jar
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.2.7/sourcecode_2.12-0.2.7.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.12/3.4.0/scalafmt-sysops_2.12-3.4.0.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.4.33/parsers_2.12-4.4.33.jar
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/geny_2.12/0.6.5/geny_2.12-0.6.5.jar
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.9.15/metaconfig-core_2.12-0.9.15.jar
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.6.6/pprint_2.12-0.6.6.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.12/3.4.0/scalafmt-sysops_2.12-3.4.0.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.4.33/scalameta_2.12-4.4.33.jar
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/geny_2.12/0.6.5/geny_2.12-0.6.5.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.12/3.4.0/scalafmt-config_2.12-3.4.0.jar
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.6.6/pprint_2.12-0.6.6.jar
+Downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.5.0/scala-collection-compat_2.12-2.5.0.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.12/3.4.0/scalafmt-config_2.12-3.4.0.jar
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.14/fansi_2.12-0.2.14.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/3.4.0/scalafmt-core_2.12-3.4.0.jar
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.5.0/scala-collection-compat_2.12-2.5.0.jar
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.14/fansi_2.12-0.2.14.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.4.33/scalameta_2.12-4.4.33.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.4.33/common_2.12-4.4.33.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.4.33/trees_2.12-4.4.33.jar
+2022.04.14 18:50:02 WARN  no build target for: E:\学习文档\coding\算法刷题\每日刷题\2022\04\14\1672.最富有客户的资产总量.scala
+四月 14, 2022 7:28:27 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace

@@ -51,21 +51,24 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
         ## 单调栈
-        ans, n = 0, len(height)
-        stack = list()
 
-        for i, h in enumerate(height):
-            while stack and h > height[stack[-1]]:
-                top = stack.pop()
-                if not stack:
-                    break
-                left = stack[-1]
-                width = i - left - 1
-                height = min(height[i], height[left]) - height[top]
-                ans += height * width
-            stack.append(i)
-
-        return ans
 
 
 # @lc code=end
+    # def trap(self, height: List[int]) -> int:
+    #     ## 单调栈
+    #     ans, n = 0, len(height)
+    #     stack = list()
+
+    #     for i, h in enumerate(height):
+    #         while stack and h > height[stack[-1]]:
+    #             top = stack.pop()
+    #             if not stack:
+    #                 break
+    #             left = stack[-1]
+    #             width = i - left - 1
+    #             height = min(height[i], height[left]) - height[top]
+    #             ans += height * width
+    #         stack.append(i)
+
+    #     return ans
